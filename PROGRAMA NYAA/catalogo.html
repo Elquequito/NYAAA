@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Catálogo de Nyaaa-Store</title>
+    <link rel="stylesheet" href="catalogo.css">
+    <link rel="stylesheet" href="filtro.css"> <!-- Estilos para la columna de filtros -->
+</head>
+<body>
+    <header>
+        <h1>Catálogo de Productos</h1>
+    </header>
+    
+    <div class="section-container">
+        <div class="filtro">
+            <h2>Filtros</h2>
+            <div class="filtro-option">
+                <label for="marca">Marca:</label>
+                <select id="marca">
+                    <option value="todas">Todas</option>
+                    <option value="marca1">Marca 1</option>
+                    <option value="marca2">Marca 2</option>
+                    <option value="marca3">Marca 3</option>
+                    <!-- Agrega más opciones de marcas según sea necesario -->
+                </select>
+            </div>
+            <div class="filtro-option">
+                <label for="tienda">Tienda:</label>
+                <select id="tienda">
+                    <option value="todas">Todas</option>
+                    <option value="tienda1">Tienda 1</option>
+                    <option value="tienda2">Tienda 2</option>
+                    <option value="tienda3">Tienda 3</option>
+                    <!-- Agrega más opciones de tiendas según sea necesario -->
+                </select>
+            </div>
+            <div class="filtro-option">
+                <label for="stock">Stock Online:</label>
+                <select id="stock">
+                    <option value="todos">Todos</option>
+                    <option value="disponible">Disponible</option>
+                    <option value="agotado">Agotado</option>
+                </select>
+            </div>
+        </div>
+
+        <div id="filter">
+            <label for="sort">Ordenar por:</label>
+            <select id="sort">
+                <option value="precioMayor">Precio (Mayor a Menor)</option>
+                <option value="precioMenor">Precio (Menor a Mayor)</option>
+                <option value="popularidad">Popularidad</option>
+                <option value="recientes">Más Recientes</option>
+            </select>
+        </div>
+
+        <div id="catalog">
+            <div class="figure-box" data-precio="50">
+                <img src="rem.jpg" alt="Figura 1">
+                <p>Rem Relax Time</p>
+                <p>$27.990</p>
+            </div>
+            <div class="figure-box" data-precio="30">
+                <img src="inozuke.jpg" alt="Figura 2">
+                <p>Inozuke Hashibira</p>
+                <p>$134.990</p>
+            </div>
+            <div class="figure-box" data-precio="30">
+                <img src="momoka.jpg" alt="Figura 2">
+                <p>Momoka Shijou</p>
+                <p>$119.990</p>
+            </div>
+            <div class="figure-box" data-precio="30">
+                <img src="miku.jpg" alt="Figura 2">
+                <p>Snow Miku</p>
+                <p>$119.990</p>
+            </div>
+            <div class="figure-box" data-precio="30">
+                <img src="nargacuga.jpg" alt="Figura 2">
+                <p>Nargacuga Nendroid</p>
+                <p>$115.990</p>
+            </div>
+            <div class="figure-box" data-precio="30">
+                <img src="chika.jpg" alt="Figura 2">
+                <p>Chika Fujiwara</p>
+                <p>$109.990</p>
+            </div>
+            <div class="figure-box" data-precio="30">
+                <img src="kaguya.jpg" alt="Figura 2">
+                <p>Kaguya Shinomiya</p>
+                <p>$109.990</p>
+            </div>
+            <div class="figure-box" data-precio="30">
+                <img src="yor.jpg" alt="Figura 2">
+                <p>Yor Forger</p>
+                <p>$84.990</p>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+    <script src="filtrojs.js"></script>
+
+</body>
+</html>

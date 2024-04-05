@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Agendar Hora</title>
+    <link rel="stylesheet" href="agendar_hora.css">
+</head>
+<body>
+    <h1>Agendar Hora</h1>
+    <form action="procesar_agenda.php" method="POST">
+        <label for="nombre">Nombre:</label>
+        <input type="text" id="nombre" name="nombre" required><br><br>
+        <label for="rut">RUT (ingresar solo números):</label>
+        <!-- Utilizamos el atributo pattern para especificar una expresión regular que solo permita caracteres numéricos -->
+        <input type="text" id="rut" name="rut" required><br><br>
+        <label for="fecha">Fecha:</label>
+        <input type="date" id="fecha" name="fecha" required><br><br>
+        <label for="hora">Hora:</label>
+        <input type="time" id="hora" name="hora" required><br><br>
+        <input type="submit" value="Agendar">
+    </form>
+
+    <script>
+        // Seleccionamos el campo de RUT
+        const rutInput = document.getElementById('rut');
+
+        // Variable para almacenar el valor anterior del campo de RUT
+        let previousValue = '';
+
+        // Agregamos un evento de input para detectar cuando el usuario escriba en el campo
+        rutInput.addEventListener('input', function(event) {
+            // Obtenemos el valor actual del campo de RUT
+            let currentValue = rutInput.value;
+
+            // Si el valor actual empieza con un punto, lo eliminamos
+            if (currentValue.startsWith('.')) {
+                currentValue = currentValue.slice(1);
+            }
+
+            // Si el valor actual es más corto que el valor anterior, permitimos la edición
+            if (currentValue.length < previousValue.length) {
+                previousValue = currentValue;
+                return; // Salimos de la función para evitar el formateo
+            }
+
+            // Verificamos si el último caracter es un guion o si ya hay 10 caracteres en total
+            if (currentValue.length === 10 || currentValue.endsWith('-')) {
+                previousValue = currentValue;
+                return; // Salimos de la función sin hacer más cambios
+            }
+
+            // Eliminamos cualquier caracter que no sea un número o la letra 'K' utilizando una expresión regular
+            currentValue = currentValue.replace(/[^\dkK]/g, '');
+
+            // Limitamos la cantidad de dígitos a 10
+            currentValue = currentValue.slice(0, 10);
+
+            // Formateamos el RUT con puntos y un guion
+            let formattedValue = '';
+            if (currentValue.length > 2) {
+                const part1 = currentValue.slice(-8, -7);
+                const part2 = currentValue.slice(-7, -4);
+                const part3 = currentValue.slice(-4, -1);
+                const part4 = currentValue.slice(-1);
+                formattedValue = part1 + '.' + part2 + '.' + part3 + '-' + part4;
+            } else {
+                formattedValue = currentValue;
+            }
+
+            // Asignamos el valor formateado de vuelta al campo de RUT
+            rutInput.value = formattedValue;
+
+            // Actualizamos el valor anterior del campo de RUT
+            previousValue = formattedValue;
+        });
+    </script>
+</body>
+</html>
