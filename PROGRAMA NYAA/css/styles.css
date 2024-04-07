@@ -1,0 +1,69 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background-color: #ff6600;
+    color: #fff;
+    padding: 40px;
+    display: flex;
+    justify-content: space-between; /* Alinea los elementos al extremo */
+    align-items: center; /* Alinea verticalmente los elementos */
+}
+
+h1 {
+    margin: 0; /* Elimina el margen del título */
+    display: flex; /* Utilizamos flexbox para alinear verticalmente los elementos */
+    align-items: center; /* Alinea verticalmente */
+}
+
+.logo-image {
+    height: 50px; /* Ajusta la altura del logo según sea necesario */
+    /* Agrega cualquier otro estilo necesario para la imagen */
+    margin-left: 05px; /* Ajusta el margen izquierdo */
+}
+section {
+    padding: 20px;
+    margin: 20px;
+    background-color: rgb(221, 221, 221);
+    border-radius: 10px;
+}
+h2 {
+    color: #ff6600;
+}
+p {
+    line-height: 1.6;
+}
+img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+    margin: 0 auto;
+    border-radius: 10px;
+}
+
+/* Estilos para los botones */
+.button-container {
+    text-align: center;
+    margin-top: 20px;
+}
+
+.button-container button {
+    padding: 10px 20px;
+    margin: 10px;
+    border: none;
+    border-radius: 5px;
+    background-color: #ff6600;
+    color: #fff;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.button-container button:hover {
+    background-color: #ff6600;
+}
+
+
