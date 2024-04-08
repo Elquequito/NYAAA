@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Catálogo de Nyaaa-Store</title>
+    <link rel="stylesheet" href="../css/ropa.css">
+    <link rel="stylesheet" href="../css/filtro.css"> <!-- Estilos para la columna de filtros -->
+</head>
+<body>
+    <header>
+        <h1>Catálogo de Ropa</h1>
+        <img src="../img/ahegao.jpg" alt="Logo" class="logo-image">
+    </header>
+    
+    <div class="section-container">
+        <div class="filtro">
+            <h2>Filtros</h2>
+            <div class="filtro-option">
+                <label for="categoria">Categoria:</label>
+                <select id="categoria">
+                    <option value="todas">Todas</option>
+                    <option value="Bandai">Bandai</option>
+                    <option value="Tamashi">Tamashi</option>
+                    <option value="Banpresto">Banpresto</option>
+                    <!-- Agrega más opciones de categorías según sea necesario -->
+                </select>
+            </div>
+            <div class="filtro-option">
+                <label for="talla">Talla:</label>
+                <select id="talla">
+                    <option value="todas">Todas</option>
+                    <option value="S">S</option>
+                    <option value="M">M</option>
+                    <option value="L">L</option>
+                    <!-- Agrega más opciones de tallas según sea necesario -->
+                </select>
+            </div>
+            <div class="filtro-option">
+                <label for="stock">Stock:</label>
+                <select id="stock">
+                    <option value="todos">Todos</option>
+                    <option value="disponible">Disponible</option>
+                    <option value="agotado">Agotado</option>
+                </select>
+            </div>
+            <div class="button-container">
+                <button id="filtrar">Filtrar</button>
+                <button id="limpiar-filtros">Limpiar Filtros</button>
+            </div>
+        </div>
+
+        <div id="filter">
+            <label for="sort">Ordenar por:</label>
+            <select id="sort">
+                <option value="precioMayor">Precio (Mayor a Menor)</option>
+                <option value="precioMenor">Precio (Menor a Mayor)</option>
+                <option value="disponible">Disponibilidad de Stock</option>
+            </select>
+        </div>
+
+        <div id="ropa">
+            <!-- Artículo 1 -->
+            <div class="ropa-box" data-precio="50" data-categoria="Bandai" data-talla="S" data-stock="disponible">
+                <img src="../img/ropa1.jpg" alt="Artículo 1">
+                <p>Camisa Bandai</p>
+                <p>$27.990</p>
+                <p class="stock-message">Disponible en línea</p>
+            </div>
+
+            <!-- Artículo 2 -->
+            <div class="ropa-box" data-precio="30" data-categoria="Tamashi" data-talla="M" data-stock="agotado">
+                <img src="../img/ropa2.jpg" alt="Artículo 2">
+                <p>Camiseta Tamashi</p>
+                <p>$134.990</p>
+                <p class="stock-message">Agotado en línea</p>
+            </div>
+
+            <!-- Artículo 3 -->
+            <div class="ropa-box" data-precio="30" data-categoria="Bandai" data-talla="L" data-stock="disponible">
+                <img src="../img/ropa3.jpg" alt="Artículo 3">
+                <p>Chaqueta Bandai</p>
+                <p>$119.990</p>
+                <p class="stock-message">Disponible en línea</p>
+            </div>
+
+            <!-- Puedes agregar más artículos aquí según sea necesario -->
+        </div>
+    </div>
+
+    <script src="../js/ordenarRopa.js"></script>
+    <script src="../js/filtroropa.js"></script>
+    <script src="../js/limpiarRopa.js"></script>
+
+</body>
+</html>

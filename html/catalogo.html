@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Catálogo de Nyaaa-Store</title>
+    <link rel="stylesheet" href="../css/catalogo.css">
+    <link rel="stylesheet" href="../css/filtro.css"> <!-- Estilos para la columna de filtros -->
+</head>
+<body>
+    <header>
+        <h1>Catálogo de Figuras</h1>
+        <img src="../img/ahegao.jpg" alt="Logo" class="logo-image">
+    </header>
+    
+    <div class="section-container">
+        <div class="filtro">
+            <h2>Filtros</h2>
+            <div class="filtro-option">
+                <label for="marca">Marca:</label>
+                <select id="marca">
+                    <option value="todas">Todas</option>
+                    <option value="Bandai">Bandai</option>
+                    <option value="Tamashi">Tamashi</option>
+                    <option value="Banpresto">Banpresto</option>
+                    <!-- Agrega más opciones de marcas según sea necesario -->
+                </select>
+            </div>
+            <div class="filtro-option">
+                <label for="tienda">Tienda:</label>
+                <select id="tienda">
+                    <option value="todas">Todas</option>
+                    <option value="Concepción"> Concepción</option>
+                    <option value="Santiasco">Santiago</option>
+                    <option value="Talca">Talca</option>
+                    <!-- Agrega más opciones de tiendas según sea necesario -->
+                </select>
+            </div>
+            <div class="filtro-option">
+                <label for="stock">Stock:</label>
+                <select id="stock">
+                    <option value="todos">Todos</option>
+                    <option value="disponible">Disponible</option>
+                    <option value="agotado">Agotado</option>
+                </select>
+            </div>
+            <div class="button-container">
+                <button id="filtrar">Filtrar</button>
+                <button id="limpiar-filtros">Limpiar Filtros</button>
+            </div>
+        </div>
+
+        <div id="filter">
+            <label for="sort">Ordenar por:</label>
+            <select id="sort">
+                <option value="precioMayor">Precio (Mayor a Menor)</option>
+                <option value="precioMenor">Precio (Menor a Mayor)</option>
+                <option value="disponible">Disponibilidad de Stock</option> <!-- Nueva opción -->
+            </select>
+        </div>
+
+        <div id="catalog">
+            <!-- Figura 1 -->
+            <div class="figure-box" data-precio="50" data-marca="Bandai" data-tienda="Concepción" data-stock="disponible">
+                <img src="../img/rem.jpg" alt="Figura 1">
+                <p>Rem Relax Time </p>
+                <p>$27.990</p>
+                <p class="stock-message">Disponible en línea</p> <!-- Nuevo mensaje para indicar el stock -->
+            </div>
+
+            <!-- Figura 2 -->
+            <div class="figure-box" data-precio="30" data-marca="Tamashi" data-tienda="Santiasco" data-stock="agotado">
+                <img src="../img/inozuke.jpg" alt="Figura 2">
+                <p>Inozuke Hashibira</p>
+                <p>$134.990</p>
+                <p class="stock-message">Agotado en línea</p> <!-- Nuevo mensaje para indicar el stock -->
+            </div>
+
+            <!-- Figura 3 -->
+            <div class="figure-box" data-precio="30" data-marca="Bandai" data-tienda="Concepción" data-stock="disponible">
+                <img src="../img/momoka.jpg" alt="Figura 3">
+                <p>Momoka Shijou</p>
+                <p>$119.990</p>
+                <p class="stock-message">Disponible en línea</p> <!-- Nuevo mensaje para indicar el stock -->
+            </div>
+
+            <!-- Figura 4 -->
+            <div class="figure-box" data-precio="30" data-marca="Tamashi" data-tienda="Santiasco" data-stock="agotado">
+                <img src="../img/miku.jpg" alt="Figura 4">
+                <p>Snow Miku</p>
+                <p>$119.990</p>
+                <p class="stock-message">Agotado en línea</p> <!-- Nuevo mensaje para indicar el stock -->
+            </div>
+
+            <!-- Figura 5 -->
+            <div class="figure-box" data-precio="30" data-marca="Bandai" data-tienda="Talca" data-stock="disponible">
+                <img src="../img/nargacuga.jpg" alt="Figura 5">
+                <p>Nargacuga Nendroid</p>
+                <p>$115.990</p>
+                <p class="stock-message">Disponible en línea</p> <!-- Nuevo mensaje para indicar el stock -->
+            </div>
+
+            <!-- Figura 6 -->
+            <div class="figure-box" data-precio="30" data-marca="Tamashi" data-tienda="Santiasco" data-stock="disponible">
+                <img src="../img/chika.jpg" alt="Figura 6">
+                <p>Chika Fujiwara</p>
+                <p>$109.990</p>
+                <p class="stock-message">Disponible en línea</p> <!-- Nuevo mensaje para indicar el stock -->
+            </div>
+
+            <!-- Figura 7 -->
+            <div class="figure-box" data-precio="30" data-marca="Bandai" data-tienda="Concepción" data-stock="agotado">
+                <img src="../img/kaguya.jpg" alt="Figura 7">
+                <p>Kaguya Shinomiya</p>
+                <p>$109.990</p>
+                <p class="stock-message">Agotado en línea</p> <!-- Nuevo mensaje para indicar el stock -->
+            </div>
+
+            <!-- Figura 8 -->
+            <div class="figure-box" data-precio="30" data-marca="Tamashi" data-tienda="Santiasco" data-stock="disponible">
+                <img src="../img/yor.jpg" alt="Figura 8">
+                <p>Yor Forger</p>
+                <p>$84.990</p>
+                <p class="stock-message">Disponible en línea</p> <!-- Nuevo mensaje para indicar el stock -->
+            </div>
+
+            <!-- Figura 9 -->
+            <div class="figure-box" data-precio="30" data-marca="Bandai" data-tienda="Talca" data-stock="agotado">
+                <img src="../img/itsuki.jpg" alt="Figura 9">
+                <p>Itsuki Nakano</p>
+                <p>$24.990</p>
+                <p class="stock-message">Agotado en línea</p> <!-- Nuevo mensaje para indicar el stock -->
+            </div>
+
+            <!-- Figura 10 -->
+            <div class="figure-box" data-precio="30" data-marca="Tamashi" data-tienda="Concepción" data-stock="disponible">
+                <img src="../img/takagaki.jpg" alt="Figura 10">
+                <p>Kaede Takagaki</p>
+                <p>$24.990</p>
+                <p class="stock-message">Disponible en línea</p> <!-- Nuevo mensaje para indicar el stock -->
+            </div>
+
+            <!-- Figura 11 -->
+            <div class="figure-box" data-precio="30" data-marca="Bandai" data-tienda="Santiasco" data-stock="disponible">
+                <img src="../img/nameless.jpg" alt="Figura 11">
+                <p>The Nameless King</p>
+                <p>$95.990</p>
+                <p class="stock-message">Disponible en línea</p> <!-- Nuevo mensaje para indicar el stock -->
+            </div>
+
+            <!-- Figura 12 -->
+            <div class="figure-box" data-precio="30" data-marca="Banpresto" data-tienda="Talca" data-stock="disponible">
+                <img src="../img/erza.jpg" alt="Figura 12">
+                <p>Erza Scarlet</p>
+                <p>$49.990</p>
+                <p class="stock-message">Disponible en línea</p> <!-- Nuevo mensaje para indicar el stock -->
+            </div>
+
+            <!-- Figura 13 -->
+            <div class="figure-box" data-precio="30" data-marca="Bandai" data-tienda="Concepción" data-stock="disponible">
+                <img src="../img/emilia.jpg" alt="Figura 13">
+                <p>Emilia Memory Snow</p>
+                <p>$99.990</p>
+                <p class="stock-message">Disponible en línea</p> <!-- Nuevo mensaje para indicar el stock -->
+            </div>
+
+            <!-- Figura 14 -->
+            <div class="figure-box" data-precio="30" data-marca="Banpresto" data-tienda="Santiasco" data-stock="disponible">
+                <img src="../img/haruna.jpg" alt="Figura 14">
+                <p>Haruna Sairenji</p>
+                <p>$49.990</p>
+                <p class="stock-message">Disponible en línea</p> <!-- Nuevo mensaje para indicar el stock -->
+            </div>
+
+            <!-- Figura 15 -->
+            <div class="figure-box" data-precio="30" data-marca="Bandai" data-tienda="Talca" data-stock="agotado">
+                <img src="../img/ram.jpg" alt="Figura 15">
+                <p>Ram Banpresto Chronicle</p>
+                <p>$39.990</p>
+                <p class="stock-message">Agotado en línea</p> <!-- Nuevo mensaje para indicar el stock -->
+            </div>
+
+            <!-- Figura 16 -->
+            <div class="figure-box" data-precio="30" data-marca="Banpresto" data-tienda="Concepción" data-stock="agotado">
+                <img src="../img/ranko.jpg" alt="Figura 16">
+                <p>Ranko Kanzaki Special Ver.</p>
+                <p>$39.990</p>
+                <p class="stock-message">Agotado en línea</p> <!-- Nuevo mensaje para indicar el stock -->
+            </div>
+
+            <!-- Figura 17 -->
+            <div class="figure-box" data-precio="30" data-marca="Tamashi" data-tienda="Santiasco" data-stock="disponible">
+                <img src="../img/utahime.jpg" alt="Figura 17">
+                <p>Utahime Iori</p>
+                <p>$39.990</p>
+                <p class="stock-message">Disponible en línea</p> <!-- Nuevo mensaje para indicar el stock -->
+            </div>
+
+            <!-- Figura 18 -->
+            <div class="figure-box" data-precio="30" data-marca="Bandai" data-tienda="Talca" data-stock="disponible">
+                <img src="../img/kanade.jpg" alt="Figura 18">
+                <p>Kanade Hayami</p>
+                <p>$27.990</p>
+                <p class="stock-message">Disponible en línea</p> <!-- Nuevo mensaje para indicar el stock -->
+            </div>
+        </div>
+    </div>
+
+    <script src="../js/script.js"></script>
+    <script src="../js/filtrojs.js"></script>
+    <script src="../js/limpiarFiltros.js"></script>
+    <script src="../js/filtrarjs.js"></script>
+
+</body>
+</html>

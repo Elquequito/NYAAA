@@ -1,0 +1,92 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: rgb(221, 221, 221);
+}
+header {
+    background-color: #ff6600;
+    color: #fff;
+    padding: 40px;
+    display: flex;
+    justify-content: flex-start; /* Alinea al inicio horizontalmente */
+    align-items: center; /* Alinea verticalmente */
+}
+
+h1 {
+    margin: 0; /* Elimina el margen del título */
+}
+
+.logo-image {
+    border-radius: 10px; /* Agrega bordes redondeados */
+    height: 80px; /* Ajusta la altura del logo según sea necesario */
+    margin-right: 10px; /* Añade un pequeño espacio entre el logo y el título */
+}
+
+.section-container {
+    padding: 20px;
+    margin: 20px;
+    background-color: rgb(221, 221, 221);
+    border-radius: 10px;
+}
+
+h2 {
+    color: #ff6600;
+}
+
+p {
+    line-height: 1.6;
+}
+
+.button-container {
+    text-align: center;
+    margin-top: 20px;
+}
+
+.button-container button {
+    padding: 10px 20px;
+    margin: 10px;
+    border: none;
+    border-radius: 5px;
+    background-color: #00c3ff;
+    color: #fff;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.button-container button:hover {
+    background-color: #ff6600;
+}
+
+.figure-box {
+    width: 200px;
+    background-color: #f0f0f0;
+    border: 1px solid #ccc;
+    margin: 10px;
+    padding: 10px;
+    float: left;
+    text-align: center;
+    cursor: pointer;
+    transition: box-shadow 0.3s;
+}
+
+.figure-box img {
+    max-width: 100%;
+    height: auto;
+}
+
+.figure-box p {
+    margin: 5px 0;
+}
+
+.figure-box:hover {
+    box-shadow: 0 0 10px #ff6600;
+}
+
+.stock-message {
+    color: #333; /* Color del texto */
+    font-size: 14px; /* Tamaño de la fuente */
+    font-style: italic; /* Estilo de fuente */
+    margin-top: 5px; /* Espacio superior */
+}
