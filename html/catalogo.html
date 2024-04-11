@@ -61,7 +61,7 @@
 
         <div id="catalog">
             <!-- Figura 1 -->
-            <div class="figure-box" data-precio="50" data-marca="Bandai" data-tienda="Concepción" data-stock="disponible">
+            <div class="figure-box" data-precio="50" data-marca="Banpresto" data-tienda="Concepción" data-stock="disponible" onclick="mostrarDetalles()">
                 <img src="../img/rem.jpg" alt="Figura 1">
                 <p>Rem Relax Time </p>
                 <p>$27.990</p>
@@ -77,7 +77,7 @@
             </div>
 
             <!-- Figura 3 -->
-            <div class="figure-box" data-precio="30" data-marca="Bandai" data-tienda="Concepción" data-stock="disponible">
+            <div class="figure-box" data-precio="30" data-marca="Bandai" data-tienda="Concepción" data-stock="disponible" onclick="mostrarDetallesMomoka()">
                 <img src="../img/momoka.jpg" alt="Figura 3">
                 <p>Momoka Shijou</p>
                 <p>$119.990</p>
@@ -203,13 +203,38 @@
                 <p>$27.990</p>
                 <p class="stock-message">Disponible en línea</p> <!-- Nuevo mensaje para indicar el stock -->
             </div>
+            <!-- Figura 19 -->
+            <div class="figure-box" data-precio="50" data-marca="Banpresto" data-tienda="Talca" data-stock="agotado" onclick="mostrarDetallesAsuna()">
+                <img src="../img/Asuna Swimsuit/Asuna full-body.jpeg" alt="Figura 19">
+                <p>Rem Relax Time </p>
+                <p>$24.990</p>
+                <p class="stock-message">Agotado en línea</p> <!-- Nuevo mensaje para indicar el stock -->
+            </div>
         </div>
     </div>
 
     <script src="../js/script.js"></script>
     <script src="../js/filtrojs.js"></script>
-    <script src="../js/limpiarFiltros.js"></script>
-    <script src="../js/filtrarjs.js"></script>
+    <script src="../js/limpiarfigura.js"></script>
+    <script src="../js/filtrofigura.js"></script>
+
+    <script>
+        function mostrarDetalles() {
+            window.location.href = 'rem_relax.html'; // Reemplaza 'detalles.html' con la ruta a tu HTML de descripciones
+        }
+    </script>
+    
+    <script>
+        function mostrarDetallesAsuna() {
+            window.location.href = 'Asuna-Swimsuit.html'; // Reemplaza 'detalles.html' con la ruta a tu HTML de descripciones
+        }
+    </script>
+
+    <script>
+        function mostrarDetallesMomoka() {
+            window.location.href = 'Momoka-Shijou.html'; // Reemplaza 'detalles.html' con la ruta a tu HTML de descripciones
+        }
+    </script>
 
 </body>
 </html>

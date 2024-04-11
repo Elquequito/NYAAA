@@ -1,0 +1,314 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    max-width: 100%;
+    margin: 0 auto;
+}
+
+.imagen{
+    max-width: 100%;
+}
+
+header{
+    border-color: #ff6600;
+    border-width: 1px;
+    border-style: solid;
+    background-color: #ff6600;
+    color: white;
+    display: flex;
+    padding: 30px;
+    justify-content: center;
+}
+
+main{
+    display: flex;
+    gap: 30px;
+    margin-bottom: 80px;
+}
+
+.imagen{
+    background-color: #f7f7f9;
+    flex: 1;
+}
+
+.informacion-producto{
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+}
+
+.nombre-figura{
+    justify-content: space-between;
+    border-bottom: 1px solid #e4e4e4;
+}
+
+.precio-figura{
+    padding-bottom: 20px;
+    border-bottom: 1px solid #e4e4e4;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.precio-figura span{
+    font-size: 24px;
+    font-weight: 300;
+}
+
+.detalle-producto{
+    padding: 30px 0;
+}
+
+.grupo{
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    margin-bottom: 15px;
+}
+
+.grupo label{
+    width: 100px;
+    color: #222;
+    font-weight: 700;
+}
+
+.grupo select{
+    width: 300px;
+    border: none;
+    padding: 12px 15px;
+    background-color: #f7f7f7;
+    outline: none;
+    color: #666;
+}
+
+.btn-limpiar{
+    border: none;
+    background: none;
+    color: #666;
+    margin-left: 120px;
+    cursor: pointer;
+}
+
+.btn-limpiar:hover{
+    color: orange;
+}
+
+.agregar-carro{
+    display: flex;
+    gap: 20px;
+    padding-bottom: 30px;
+    border-bottom: 1px solid #e4e4e4;
+}
+
+.cantidad{
+    position: relative;
+}
+
+.input-cantidad{
+    background-color: #f7f7f7;
+    border: none;
+    padding: 10px;
+    width: 60px;
+    height: 100%;
+    color: #666;
+    font-weight: 500;
+}
+
+ .input-cantidad:focus{
+    outline: none;
+ }
+
+.input-cantidad::-webkit-inner-spin-button,
+.input-cantidad::-webkit-outer-spin-button{
+    -webkit-appearance: none;
+    appearance: none;
+}
+
+.btn-up-down{
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    top: 7px;
+    right: 7px;
+}
+
+.btn-up-down i{
+    font-size: 11px;
+    color: #666;
+    cursor: pointer;
+}
+
+.fa-chevron-up:hover{
+    color: orange;
+}
+
+.fa-chevron-down:hover{
+    color: orange;
+}
+
+.btn-agregar{
+    border: none;
+    background-color: #252525;
+    padding: 10px;
+    color: #f7f7f7;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 5px;
+    font-weight: 700;
+    cursor: pointer;
+}
+
+.btn-agregar:hover{
+    color: black;
+    background-color: #ff6600;
+}
+
+.hidden{
+    display: none;
+}
+
+.descripcion,
+.detalle,
+.reviews{
+    display: flex;
+    flex-direction: column;
+    border-bottom: 1px solid #e4e4e4;
+    padding: 10px 0;
+}
+
+.titulo-descripcion,
+.titulo-detalle,
+.titulo-reviews{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    cursor: pointer;
+}
+
+.titulo-descripcion h4,
+.titulo-detalle h4,
+.titulo-reviews h4{
+    font-weight: 300;
+    color: #666;
+    font-size: 14px;
+}
+
+.txt-descripcion,
+.txt-detalle,
+.txt-reviews{
+    font-size: 13px;
+    color: #252525;
+    line-height: 22px;
+    margin-top: 25px;
+}
+
+.social{
+    display: flex;
+    justify-content: space-between;
+    padding: 10px 0;
+    align-items: center;
+    border-bottom: 1px solid #e4e4e4;
+}
+
+.social span{
+    font-weight: 300;
+    color: #252525;
+}
+
+.btn-social{
+    display: flex;
+    gap: 15px;
+    align-items: center;
+}
+
+.btn-social a:link,
+.btn-social a:visited{
+    color: #666;
+    font-size: 15px;
+}
+
+.productos-relacionados h2{
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.lista-relacionado{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 25px;
+}
+
+.carta{
+    cursor: pointer;
+}
+
+.carta-img{
+    background: transparent;
+    margin-bottom: 15px;
+}
+
+.carta-img img{
+    height: 400px;
+    object-fit: cover;
+    box-shadow: 1px 1px 3px rgba(0, 0, 0, 0.2);
+}
+
+.informacion-carta{
+    display: flex;
+    justify-content: space-between;
+}
+
+.txt-producto{
+    color: #252525;
+    font-weight: 300;
+    line-height: 1.4;
+}
+
+.txt-producto h3{
+    color: inherit;
+    font-weight: inherit;
+    font-size: 15px;
+}
+
+.txt-producto p{
+    color: #666;
+    font-size: 13px;
+}
+
+.txt-producto h3:hover{
+    color: #ff6600;
+}
+
+.txt-producto p:hover{
+    color: #ff6600;
+}
+
+footer{
+    padding: 30px;
+    background-color: #eee;
+    margin-bottom: 50px;
+    color: #222;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

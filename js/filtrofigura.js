@@ -1,12 +1,9 @@
 document.addEventListener('DOMContentLoaded', function () {
     const botonFiltrar = document.getElementById('filtrar');
-    botonFiltrar.addEventListener('click', filtrar);
-
-    const botonLimpiarFiltros = document.getElementById('limpiar-filtros');
-    botonLimpiarFiltros.addEventListener('click', limpiarFiltros);
+    botonFiltrar.addEventListener('click', filtrarFiguras);
 });
 
-function filtrar() {
+function filtrarFiguras() {
     const marcaSeleccionada = document.getElementById('marca').value;
     const tiendaSeleccionada = document.getElementById('tienda').value;
     const stockSeleccionado = document.getElementById('stock').value;
@@ -29,12 +26,5 @@ function filtrar() {
         } else {
             figura.style.display = 'none';
         }
-    });
-}
-
-function limpiarFiltros() {
-    const figuras = document.querySelectorAll('.figure-box');
-    figuras.forEach(figura => {
-        figura.style.display = 'block';
     });
 }

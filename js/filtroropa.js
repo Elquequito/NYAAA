@@ -9,6 +9,7 @@ function filtrarRopa() {
     const stockSeleccionado = document.getElementById('stock').value;
 
     const productos = document.querySelectorAll('.ropa-box');
+    
     productos.forEach(producto => {
         const categoriaProducto = producto.dataset.categoria;
         const tallaProducto = producto.dataset.talla;
