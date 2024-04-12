@@ -18,6 +18,7 @@ h1 {
     margin: 0; /* Elimina el margen del título */
     display: flex; /* Utilizamos flexbox para alinear verticalmente los elementos */
     align-items: center; /* Alinea verticalmente */
+    font-size: 36px; /* Ajusta el tamaño del título */
 }
 
 .logo-image {
@@ -60,13 +61,13 @@ img {
     .logo-image {
         height: 60px; /* Reduce la altura del logo */
         margin-right: 10px; /* Añade margen superior */
-
     }
 
     h1 {
-        font-size: 40px; /* Aumenta el tamaño del título */
+        font-size: 100px; /* Aumenta el tamaño del título */
         margin-top: 10px; /* Añade margen superior */
         text-align: center; /* Centra el título */
+        font-size: 30px; /* Tamaño del título */
     }
 
     .button-container {
