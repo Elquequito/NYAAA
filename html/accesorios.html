@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Catálogo de Accesorios</title>
+    <link rel="stylesheet" href="../css/accesorios.css">
+    <link rel="stylesheet" href="../css/filtro.css"> <!-- Estilos para la columna de filtros -->
+</head>
+<body>
+    <header>
+        <h1>Catálogo de Accesorios</h1>
+        <img src="../img/ahegao.jpg" alt="Logo" class="logo-image">
+    </header>
+    
+    <div class="section-container">
+        <div class="filtro">
+            <h2>Filtros</h2>
+            <div class="filtro-option">
+                <label for="categoria">Categoría:</label>
+                <select id="categoria">
+                    <option value="todas">Todas</option>
+                    <option value="aros">Aros</option>
+                    <option value="cosplay">Cosplay</option>
+                    <option value="collares">Collares</option>
+                    <option value="llaveros">Llaveros</option>
+                    <!-- Agrega más opciones de categorías según sea necesario -->
+                </select>
+            </div>
+            <div class="filtro-option">
+                <label for="stock">Stock:</label>
+                <select id="stock">
+                    <option value="todos">Todos</option>
+                    <option value="disponible">Disponible</option>
+                    <option value="agotado">Agotado</option>
+                </select>
+            </div>
+            <div class="button-container">
+                <button id="filtrar">Filtrar</button>
+                <button id="limpiar-filtros">Limpiar Filtros</button>
+            </div>
+        </div>
+
+        <div id="filter">
+            <label for="sort">Ordenar por:</label>
+            <select id="sort">
+                <option value="precioMayor">Precio (Mayor a Menor)</option>
+                <option value="precioMenor">Precio (Menor a Mayor)</option>
+                <option value="disponible">Disponibilidad de Stock</option>
+            </select>
+        </div>
+
+        <div id="accesorios">
+            <!-- Artículo 1 -->
+            <div class="accesorios-box" data-precio="20" data-categoria="aros" data-stock="disponible">
+                <img src="../img/aros-tanjiro.jpg">
+                <p>Aros de Tanjirou (Kimetsu no Yaiba)</p>
+                <p>$5.000</p>
+                <p class="stock-message">Disponible en línea</p>
+            </div>
+
+            <!-- Artículo 2 -->
+            <div class="accesorios-box" data-precio="15" data-categoria="cosplay" data-stock="agotado">
+                <img src="../img/itadori.jpg">
+                <p>Traje de Gallito de pelea (Jujutsu Kaisen)</p>
+                <p>$35.000</p>
+                <p class="stock-message">Agotado en línea</p>
+            </div>
+
+            <!-- Artículo 3 -->
+            <div class="accesorios-box" data-precio="50" data-categoria="cosplay" data-stock="agotado">
+                <img src="../img/rengoku.jpg">
+                <p>Traje de Rengoku (Kimetsu no Yaiba)</p>
+                <p>$50.000</p>
+                <p class="stock-message">Disponible en línea</p>
+            </div>
+
+            <!-- Artículo 4 -->
+            <div class="accesorios-box" data-precio="25" data-categoria="cosplay" data-stock="disponible">
+                <img src="../img/MAI-SAKURAJIMA.jpg">
+                <p>Traje de Mai Sakurajima (Seishun Buta Yarō)</p>
+                <p>$22.000</p>
+                <p class="stock-message">Disponible en línea</p>
+            </div>
+
+            <!-- Artículo 5 -->
+            <div class="accesorios-box" data-precio="5" data-categoria="collares" data-stock="agotado">
+                <img src="../img/akatsuki.jpg">
+                <p>Collar de Nube Akatsuki-Naruto</p>
+                <p>$4.990</p>
+                <p class="stock-message">Agotado en línea</p>
+            </div>
+
+            <!-- Artículo 6 -->
+            <div class="accesorios-box" data-precio="5" data-categoria="collares" data-stock="disponible">
+                <img src="../img/Berserk.jpg">
+                <p>Collar Marca del Sacrificio-Berserk</p>
+                <p>$3.990</p>
+                <p class="stock-message">Disponible en línea</p>
+            </div>
+
+            <!-- Artículo 7 --> 
+            <div class="accesorios-box" data-precio="5" data-categoria="llaveros" data-stock="agotado">
+                <img src="../img/llavero-anya.jpg">
+                <p>Llavero de Anya | Spy x Family</p>
+                <p>$2.500</p>
+                <p class="stock-message">Agotado en línea</p>
+            </div>
+
+            <!-- Artículo 8 -->
+            <div class="accesorios-box" data-precio="5" data-categoria="collares" data-stock="disponible">
+                <img src="../img/beherit.jpg">
+                <p>Collar Beherit dormido/activado | Berserk</p>
+                <p>$3.990</p>
+                <p class="stock-message">Disponible en línea</p>
+            </div>
+           
+            <!-- Artículo 9 -->
+            <div class="accesorios-box" data-precio="5" data-categoria="llaveros" data-stock="disponible">
+                <img src="../img/umbreon.jpg">
+                <p>Umbreon & Umbreon Shiny | Pokemon</p>
+                <p>$5.000</p>
+                <p class="stock-message">Disponible en línea</p>
+            </div>
+
+            <!-- Artículo 10 -->
+            <div class="accesorios-box" data-precio="5" data-categoria="llaveros" data-stock="agotado">
+                <img src="../img/digimon.jpg">
+                <p>Llavero Digivice | Digimon Adventure</p>
+                <p>$5.000</p>
+                <p class="stock-message">Agotado en línea</p>
+            </div>
+
+            <!-- Artículo 11 -->
+            <div class="accesorios-box" data-precio="5" data-categoria="aros" data-stock="disponible">
+                <img src="../img/kurapika.jpg">
+                <p>Aro Kurapika | Hunter x Hunter</p>
+                <p>$3.000</p>
+                <p class="stock-message">Disponible en línea</p>
+            </div>
+
+            <!-- Artículo 12 -->
+            <div class="accesorios-box" data-precio="5" data-categoria="aros" data-stock="disponible">
+                <img src="../img/vanitas.jpg">
+                <p>Aros Vanitas (Vanitas no Carte)</p>
+                <p>$5.000</p>
+                <p class="stock-message">Agotado en línea</p>
+            </div>
+        </div>
+    </div>
+
+    <script src="../js/ordenarAccesorios.js"></script>
+    <script src="../js/filtroaccesorios.js"></script>
+    <script src="../js/limpiarAccesorios.js"></script>
+
+</body>
+</html>

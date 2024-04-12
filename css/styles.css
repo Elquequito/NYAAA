@@ -1,3 +1,4 @@
+/* Estilos generales */
 body {
     font-family: Arial, sans-serif;
     margin: 0;
@@ -7,7 +8,7 @@ body {
 header {
     background-color: #ff6600;
     color: #fff;
-    padding: 40px;
+    padding: 30px;
     display: flex;
     justify-content: space-between; /* Alinea los elementos al extremo */
     align-items: center; /* Alinea verticalmente los elementos */
@@ -20,28 +21,62 @@ h1 {
 }
 
 .logo-image {
-    height: 80px; /* Ajusta la altura del logo según sea necesario */
+    height: 60px; /* Ajusta la altura del logo según sea necesario */
     /* Agrega cualquier otro estilo necesario para la imagen */
-    margin-left: 05px; /* Ajusta el margen izquierdo */
-} 
+    margin-left: 10px; /* Ajusta el margen izquierdo */
+}
+
 section {
     padding: 20px;
     margin: 20px;
     background-color: rgb(221, 221, 221);
     border-radius: 10px;
 }
+
 h2 {
     color: #ff6600;
 }
+
 p {
     line-height: 1.6;
 }
+
 img {
     max-width: 100%;
     height: auto;
     display: block;
     margin: 0 auto;
     border-radius: 10px;
+}
+
+/* Estilos para dispositivos pequeños */
+@media screen and (max-width: 768px) {
+    header {
+        padding: 20px; /* Reducimos el padding */
+        flex-direction: column; /* Cambiamos la dirección del flexbox a columna */
+        align-items: center; /* Alineamos los elementos al centro */
+    }
+
+    .logo-image {
+        height: 60px; /* Reduce la altura del logo */
+        margin-right: 10px; /* Añade margen superior */
+
+    }
+
+    h1 {
+        font-size: 40px; /* Aumenta el tamaño del título */
+        margin-top: 10px; /* Añade margen superior */
+        text-align: center; /* Centra el título */
+    }
+
+    .button-container {
+        margin-top: 10px; /* Reducimos el margen superior */
+    }
+
+    section {
+        padding: 10px; /* Reducimos el padding */
+        margin: 10px 0; /* Ajustamos el margen */
+    }
 }
 
 /* Estilos para los botones */
@@ -65,5 +100,3 @@ img {
 .button-container button:hover {
     background-color: #ff6600;
 }
-
-

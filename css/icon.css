@@ -1,10 +1,32 @@
+/* Estilos para el contenedor del título y los iconos */
+.title-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between; /* Alinea el título y los iconos al extremo derecho */
+    width: 100%; /* Ajusta el ancho del contenedor para ocupar todo el espacio disponible */
+}
+
+/* Estilos para el título */
+h1 {
+    margin: 0; /* Elimina el margen del título */
+    font-size: 24px; /* Tamaño del título */
+}
+
+/* Estilos para los iconos */
+.icon-container {
+    display: flex;
+    align-items: center;
+    margin-left: auto; /* Mueve los iconos al extremo derecho */
+    flex-wrap: wrap; /* Permite que los iconos se envuelvan si no hay suficiente espacio */
+}
+
 .icon {
-    color: white;
+    color: rgb(105, 50, 255);
     font-size: 24px;
     margin-left: 10px; /* Espacio entre los iconos */
     text-decoration: none;
 }
 
 .icon:hover {
-    color: lightgray;
+    color: rgb(105, 50, 255);
 }
