@@ -1,16 +1,35 @@
-var slideIndex = 0;
-var slides = document.getElementsByClassName("gallery");
-var timer; // Variable para el temporizador
+// Esperar a que el contenido del documento esté cargado
+document.addEventListener('DOMContentLoaded', function() {
+    // Obtener todas las imágenes de la galería
+    var imagenes = document.querySelectorAll('.galeria-img');
 
-showSlides(); // Llamada inicial para comenzar la presentación automática
+    // Índice inicial de la imagen
+    var indiceImagen = 0;
 
-function showSlides() {
-    var i;
-    for (i = 0; i < slides.length; i++) {
-        slides[i].style.display = "none";  
+    // Función para ocultar todas las imágenes excepto la especificada por el índice
+    function ocultarTodasExcepto(indice) {
+        imagenes.forEach(function(img, index) {
+            if (index !== indice) {
+                img.style.display = 'none';
+            }
+        });
     }
-    slideIndex++;
-    if (slideIndex > slides.length) {slideIndex = 1}    
-    slides[slideIndex-1].style.display = "block";  
-    timer = setTimeout(showSlides, 4000); // Cambiar la imagen cada 2 segundos
-}
+
+    // Función para mostrar la siguiente imagen
+    function mostrarSiguienteImagen() {
+        // Ocultar la imagen actual
+        imagenes[indiceImagen].style.display = 'none';
+
+        // Incrementar el índice de la imagen, volviendo al inicio si es necesario
+        indiceImagen = (indiceImagen + 1) % imagenes.length;
+
+        // Mostrar la siguiente imagen
+        imagenes[indiceImagen].style.display = 'block';
+    }
+
+    // Ocultar todas las imágenes excepto la primera
+    ocultarTodasExcepto(0);
+
+    // Cambiar la imagen cada 4 segundos
+    setInterval(mostrarSiguienteImagen, 4000);
+});

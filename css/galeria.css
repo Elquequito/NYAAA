@@ -1,11 +1,14 @@
 .gallery {
-    display: none;
     width: 100%; /* Ajustar el ancho al 100% */
     height: auto; /* Altura automática para mantener la proporción */
+    max-width: 800px; /* Ancho máximo del contenedor */
+    max-height: 600px; /* Altura máxima del contenedor */
 }
 
 .gallery-container {
-    position: relative;
-    max-width: 800px; /* Ancho máximo del contenedor */
-    margin: auto;
+    max-width: 100%; /* Establece el ancho máximo al 100% del contenedor */
+    max-height: 100%; /* Establece la altura máxima al 100% del contenedor */
+    width: auto; /* Permite que el ancho se ajuste automáticamente para mantener la proporción */
+    height: auto; /* Permite que la altura se ajuste automáticamente para mantener la proporción */
 }
+
