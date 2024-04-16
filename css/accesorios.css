@@ -65,7 +65,7 @@ p {
 #accesorios {
     display: flex;
     flex-wrap: wrap; /* Permitir que los elementos se envuelvan en múltiples líneas */
-    justify-content: space-between; /* Distribuir los elementos uniformemente en el contenedor */
+    justify-content: space-around; /* Distribuir los elementos uniformemente */
 }
 
 .accesorios-box {
@@ -73,7 +73,7 @@ p {
     height: 320px; /* Altura fija */
     background-color: #f0f0f0;
     border: 1px solid #ccc;
-    margin: 10px;
+    margin: 10px; /* Margen entre los productos */
     padding: 10px;
     float: left;
     text-align: center;

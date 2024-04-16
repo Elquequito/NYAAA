@@ -1,10 +1,10 @@
 document.addEventListener("DOMContentLoaded", function() {
     const categoriaSelect = document.getElementById('categoria');
     const stockSelect = document.getElementById('stock');
+    const botonFiltrar = document.getElementById('filtrar'); // Agregamos la referencia al botón de filtrar
 
-    // Agregar evento change a los select de categoría y stock
-    categoriaSelect.addEventListener('change', filtrarAccesorios);
-    stockSelect.addEventListener('change', filtrarAccesorios);
+    // Agregar evento click al botón de filtrar
+    botonFiltrar.addEventListener('click', filtrarAccesorios);
 
     function filtrarAccesorios() {
         const categoriaSeleccionada = categoriaSelect.value;
@@ -28,7 +28,4 @@ document.addEventListener("DOMContentLoaded", function() {
             }
         });
     }
-        // Reiniciar selectores de filtro
-        document.getElementById('categoria').value = 'todas';
-        document.getElementById('stock').value = 'todos';
 });
