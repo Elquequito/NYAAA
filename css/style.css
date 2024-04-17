@@ -11,6 +11,8 @@ body{
 
 .imagen{
     max-width: 100%;
+    margin-left: 50px;
+    margin-top: 10px;
 }
 
 header{
@@ -31,14 +33,15 @@ main{
 }
 
 .imagen{
-    background-color: #f7f7f9;
-    flex: 1;
+    border-style: solid;
+    color: #666;
 }
 
 .informacion-producto{
     flex: 1;
     display: flex;
     flex-direction: column;
+    margin-top: 10px;
 }
 
 .nombre-figura{
@@ -56,7 +59,8 @@ main{
 
 .precio-figura span{
     font-size: 24px;
-    font-weight: 300;
+    font-weight: 600;
+    margin-top: 10px;
 }
 
 .detalle-producto{
@@ -235,12 +239,15 @@ main{
 .productos-relacionados h2{
     text-align: center;
     margin-bottom: 30px;
+    margin-top: 150px;
 }
 
 .lista-relacionado{
     display: grid;
     grid-template-columns: repeat(4, 1fr);
     gap: 25px;
+    max-width: 1600px;
+    margin-left: 190px;
 }
 
 .carta{
@@ -253,7 +260,9 @@ main{
 }
 
 .carta-img img{
+    margin-top: 50px;
     height: 400px;
+    width: 300px;
     object-fit: cover;
     box-shadow: 1px 1px 3px rgba(0, 0, 0, 0.2);
 }
@@ -261,6 +270,7 @@ main{
 .informacion-carta{
     display: flex;
     justify-content: space-between;
+    max-width: 300px;
 }
 
 .txt-producto{
@@ -291,7 +301,6 @@ main{
 footer{
     padding: 30px;
     background-color: #eee;
-    margin-bottom: 50px;
     color: #222;
 }
 
