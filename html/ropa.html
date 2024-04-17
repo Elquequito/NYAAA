@@ -62,36 +62,95 @@
 
         <div id="ropa">
             <!-- Artículo 1 -->
-            <div class="ropa-box" data-precio="50" data-categoria="Bandai" data-talla="S" data-stock="disponible">
-                <img src="../img/ropa1.jpg" alt="Artículo 1">
-                <p>Camisa Bandai</p>
-                <p>$27.990</p>
+            <div class="ropa-box" data-precio="50" data-categoria="Bandai" data-talla="S" data-stock="disponible" onclick="mostrarDetallesPolera()">
+                <img src="../img/poleraitadori.jpg" alt="Artículo 1">
+                <p>Polera Gallito de pelea</p>
+                <p>$14.990</p>
                 <p class="stock-message">Disponible en línea</p>
             </div>
 
             <!-- Artículo 2 -->
-            <div class="ropa-box" data-precio="30" data-categoria="Tamashi" data-talla="M" data-stock="agotado">
-                <img src="../img/ropa2.jpg" alt="Artículo 2">
-                <p>Camiseta Tamashi</p>
-                <p>$134.990</p>
+            <div class="ropa-box" data-precio="30" data-categoria="Tamashi" data-talla="S" data-stock="agotado" onclick="mostrarDetallesPoleronKimetsu()">
+            <img src="../img/poleronkimetsu.jpg" alt="Artículo 3">
+                <p>Poleron Kimetsu no Yaiba</p>
+                <p>$25.990</p>
                 <p class="stock-message">Agotado en línea</p>
             </div>
 
             <!-- Artículo 3 -->
-            <div class="ropa-box" data-precio="30" data-categoria="Bandai" data-talla="L" data-stock="disponible">
-                <img src="../img/ropa3.jpg" alt="Artículo 3">
-                <p>Chaqueta Bandai</p>
-                <p>$119.990</p>
+            <div class="ropa-box" data-precio="30" data-categoria="Bandai" data-talla="M" data-stock="disponible" onclick="mostrarDetallesPoleronItadori()">
+                <img src="../img/poleronCosplayItadori.jpg" alt="Artículo 3">
+                <p>Poleron de Cosplay Itadori</p>
+                <p>$31.000</p>
                 <p class="stock-message">Disponible en línea</p>
             </div>
 
-            <!-- Puedes agregar más artículos aquí según sea necesario -->
+            <!-- Artículo 4 -->
+            <div class="ropa-box" data-precio="30" data-categoria="Bandai" data-talla="M" data-stock="disponible" onclick="mostrarDetallespoleraIppo()">
+                <img src="../img/poleraIppo.jpg" alt="Artículo 3">
+                <p>Polera Hajime No Ippo</p>
+                <p>$14.990</p>
+                <p class="stock-message">Disponible en línea</p>
+            </div>
+
+            <!-- Artículo 5 -->
+            <div class="ropa-box" data-precio="30" data-categoria="Bandai" data-talla="L" data-stock="agotado" onclick="mostrarDetallespoleraLuffy()">
+                <img src="../img/poleraLuffy.jpg" alt="Artículo 3">
+                <p>Polera One Piece</p>
+                <p>$14.990</p>
+                <p class="stock-message">Agotado en línea</p>
+            </div>
+
+            <!-- Artículo 6 -->
+            <div class="ropa-box" data-precio="30" data-categoria="Bandai" data-talla="L" data-stock="agotado" onclick="mostrarDetallespoleraAhegao()">
+                <img src="../img/poleraahegao.jpg" alt="Artículo 3">
+                <p>Polera Satoru Gojo</p>
+                <p>$14.990</p>
+                <p class="stock-message">Agotado en línea</p>
+            </div>
+
         </div>
     </div>
 
     <script src="../js/ordenarRopa.js"></script>
     <script src="../js/filtroropa.js"></script>
     <script src="../js/limpiarRopa.js"></script>
+
+    <script>
+        function mostrarDetallesPolera() {
+            window.location.href = 'polera.html'; // Reemplaza 'detalles html' con la ruta a tu html de descripciones
+        }
+    </script>
+
+    <script>
+        function mostrarDetallesPoleronKimetsu() {
+            window.location.href = 'poleronKimetsu.html'; // Reemplaza 'detalles html' con la ruta a tu html de descripciones
+        }
+    </script>
+
+    <script>
+        function mostrarDetallesPoleronItadori() {
+            window.location.href = 'poleronItadori.html'; // Reemplaza 'detalles html' con la ruta a tu html de descripciones
+        }
+    </script>
+
+    <script>
+        function mostrarDetallespoleraIppo() {
+            window.location.href = 'poleraIppo.html'; // Reemplaza 'detalles html' con la ruta a tu html de descripciones
+        }
+    </script>
+
+    <script>
+        function mostrarDetallespoleraLuffy() {
+            window.location.href = 'poleraluffy.html'; // Reemplaza 'detalles html' con la ruta a tu html de descripciones
+        }
+    </script>
+
+    <script>
+        function mostrarDetallespoleraAhegao() {
+            window.location.href = 'poleraAhegao.html'; // Reemplaza 'detalles html' con la ruta a tu html de descripciones
+        }
+    </script>
 
 </body>
 </html>
