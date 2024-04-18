@@ -1,92 +1,105 @@
-/* Estilos generales */
-body {
-    font-family: Arial, sans-serif;
-    margin: 0;
-    padding: 0;
-    background-color: #f2f2f2;
-}
-
-header {
-    background-color: #ff6600;
+.payment-info {
+    background: blue;
+    padding: 10px;
+    border-radius: 6px;
     color: #fff;
-    padding: 20px;
-    text-align: center;
-}
-
-main {
-    display: flex;
-    justify-content: space-between;
-    margin: 20px;
-}
-
-.cart-items {
-    flex: 2;
-}
-
-.cart-summary {
-    flex: 1;
-    background-color: #fff;
-    border: 1px solid #ccc;
-    border-radius: 5px;
-    padding: 20px;
-}
-
-.cart-summary h2 {
-    font-size: 18px;
-    margin-bottom: 10px;
-}
-
-.item {
-    display: flex;
-    align-items: center;
-    border-bottom: 1px solid #ccc;
-    padding: 10px 0;
-}
-
-.item img {
-    width: 80px;
-    height: 80px;
-    margin-right: 20px;
-}
-
-.item-details {
-    flex: 1;
-}
-
-.item-details h3 {
-    font-size: 16px;
+    font-weight: bold;
+  }
+  
+  .product-details {
+    padding: 10px;
+  }
+  
+  body {
+    background: #eee;
+  }
+  
+  .cart {
+    background: #fff;
+  }
+  
+  .p-about {
+    font-size: 12px;
+  }
+  
+  .table-shadow {
+    -webkit-box-shadow: 5px 5px 15px -2px rgba(0,0,0,0.42);
+    box-shadow: 5px 5px 15px -2px rgba(0,0,0,0.42);
+  }
+  
+  .type {
+    font-weight: 400;
+    font-size: 10px;
+  }
+  
+  label.radio {
+    cursor: pointer;
+  }
+  
+  label.radio input {
+    position: absolute;
+    top: 0;
+    left: 0;
+    visibility: hidden;
+    pointer-events: none;
+  }
+  
+  label.radio span {
+    padding: 1px 12px;
+    border: 2px solid #ada9a9;
+    display: inline-block;
+    color: #8f37aa;
+    border-radius: 3px;
+    text-transform: uppercase;
+    font-size: 11px;
+    font-weight: 300;
+  }
+  
+  label.radio input:checked + span {
+    border-color: #fff;
+    background-color: blue;
+    color: #fff;
+  }
+  
+  .credit-inputs {
+    background: rgb(102,102,221);
+    color: #fff !important;
+    border-color: rgb(102,102,221);
+  }
+  
+  .credit-inputs::placeholder {
+    color: #fff;
+    font-size: 13px;
+  }
+  
+  .credit-card-label {
+    font-size: 9px;
+    font-weight: 300;
+  }
+  
+  .form-control.credit-inputs:focus {
+    background: rgb(102,102,221);
+    border: rgb(102,102,221);
+  }
+  
+  .line {
+    border-bottom: 1px solid rgb(102,102,221);
+  }
+  
+  .information span {
+    font-size: 12px;
+    font-weight: 500;
+  }
+  
+  .information {
     margin-bottom: 5px;
-}
-
-.remove-item {
-    background-color: #ff6666;
-    color: #fff;
-    border: none;
-    padding: 5px 10px;
-    border-radius: 5px;
-    cursor: pointer;
-}
-
-.remove-item:hover {
-    background-color: #ff6600;
-}
-
-.cart-summary button.checkout-button {
-    background-color: #339933;
-    color: #fff;
-    border: none;
-    padding: 10px 20px;
-    border-radius: 5px;
-    cursor: pointer;
-}
-
-.cart-summary button.checkout-button:hover {
-    background-color: #267326;
-}
-
-footer {
-    background-color: #333;
-    color: #fff;
-    text-align: center;
-    padding: 20px;
-}
+  }
+  
+  .items {
+    -webkit-box-shadow: 5px 5px 4px -1px rgba(0,0,0,0.25);
+    box-shadow: 5px 5px 4px -1px rgba(0, 0, 0, 0.08);
+  }
+  
+  .spec {
+    font-size: 11px;
+  }
