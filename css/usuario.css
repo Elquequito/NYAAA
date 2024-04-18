@@ -1,0 +1,160 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: rgb(221, 221, 221);
+}
+
+header {
+    background-color: #ff6600;
+    color: #fff;
+    padding: 50px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+h1 {
+    margin: 0;
+    display: flex;
+    align-items: center;
+    position: relative;
+    font-size: 6em;
+    letter-spacing: 15px;
+    color: #fff;
+    text-transform: uppercase;
+    width: 100%;
+    text-align: center;
+    -webkit-box-reflect: below 1px linear-gradient(transparent, #0098);
+    line-height: 0.7em;
+    outline: none;
+    animation: animate 5s linear infinite;
+}
+
+.logo-image {
+    height: 60px;
+    margin-right: 1180px;
+    border-radius: 10px;
+}
+
+section {
+    padding: 20px;
+    margin: 20px;
+    background-color: rgb(221, 221, 221);
+    border-radius: 10px;
+}
+
+h2 {
+    color: #ff6600;
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+p {
+    line-height: 1.6;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+    margin: 0 auto;
+    border-radius: 10px;
+}
+
+@media screen and (max-width: 768px) {
+    header {
+        padding: 20px;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .logo-image {
+        height: 60px;
+        margin-right: 10px;
+    }
+
+    h1 {
+        font-size: 100px;
+        margin-top: 10px;
+        text-align: center;
+        font-size: 3px;
+    }
+
+    .button-container {
+        margin-top: 10px;
+    }
+
+    section {
+        padding: 10px;
+        margin: 10px 0;
+    }
+
+    .figure-box {
+        width: calc(50% - 20px);
+    }
+}
+
+.button-container {
+    text-align: center;
+    margin-top: 20px;
+}
+
+.button-container button {
+    padding: 10px 20px;
+    margin: 10px;
+    border: none;
+    border-radius: 5px;
+    background-color: #ff6600;
+    color: #fff;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.button-container button:hover {
+    background-color: #ff6600;
+}
+
+.section-figuras {
+    text-align: center;
+}
+
+.figure-box {
+    width: 200px;
+    height: 300px;
+    background-color: #f0f0f0;
+    border: 1px solid #ccc;
+    margin: 10px;
+    padding: 10px;
+    text-align: center;
+    cursor: pointer;
+    transition: box-shadow 0.3s;
+    display: inline-block;
+    vertical-align: top;
+    box-sizing: border-box;
+}
+
+.figure-box img {
+    max-width: 100%;
+    height: auto;
+}
+
+.figure-box p {
+    margin: 5px 0;
+}
+
+.figure-box:hover {
+    box-shadow: 0 0 10px #ff6600;
+}
+
+.stock-message {
+    color: #333;
+    font-size: 14px;
+    font-style: italic;
+    margin-top: 5px;
+}
+
+.gallery-container {
+    text-align: center;
+}

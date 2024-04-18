@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Perfil de Usuario</title>
+    <link rel="stylesheet" href="../css/usuario.css">
+</head>
+<body>
+    <header>
+        <h1>Mi Perfil</h1>
+        <img src="user_avatar.jpg" alt="Avatar" class="avatar">
+    </header>
+    <div class="container">
+        <section id="historial-compras" class="section-container">
+            <h2>Historial de Compras</h2>
+            <!-- Aquí va el historial de compras del usuario -->
+            <ul>
+                <li>Compra 1 - Detalles...</li>
+                <li>Compra 2 - Detalles...</li>
+                <!-- Agrega más elementos según el historial -->
+            </ul>
+        </section>
+        <section id="seguimiento-pedido" class="section-container">
+            <h2>Seguimiento del Pedido</h2>
+            <!-- Aquí va el seguimiento de los pedidos del usuario -->
+            <p>Estado del último pedido: En tránsito</p>
+            <p>Número de seguimiento: 1234567890</p>
+        </section>
+        <section id="modificacion-datos" class="section-container">
+            <h2>Modificar Datos</h2>
+            <!-- Formulario para modificar datos -->
+            <form>
+                <label for="correo">Correo Electrónico:</label><br>
+                <input type="email" id="correo" name="correo" value="usuario@example.com"><br>
+                <label for="contrasena">Contraseña:</label><br>
+                <input type="password" id="contrasena" name="contrasena"><br>
+                <input type="submit" value="Guardar Cambios">
+            </form>
+        </section>
+    </div>
+</body>
+</html>

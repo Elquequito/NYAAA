@@ -257,7 +257,26 @@ h4 {
 }
 
 .logo-image {
-    height: 60px; /* Ajusta la altura del logo según sea necesario */
+    height: 80px; /* Ajusta la altura del logo según sea necesario */
     /* Agrega cualquier otro estilo necesario para la imagen */
-    margin-right: 1243px; /* Ajusta el margen izquierdo */
+    margin-right: 1207px; /* Ajusta el margen izquierdo */
 }
+
+.btn {
+    background-color: orange;
+    color: #fff; /* Letras blancas */
+    font-size: 12px;
+    padding: 10px 45px;
+    border: 1px solid transparent;
+    border-radius: 8px;
+    font-weight: 600;
+    letter-spacing: 0.5px;
+    text-transform: uppercase;
+    margin-top: 10px;
+    cursor: pointer;
+}
+
+.btn:hover {
+    background-color: #ff6600;
+}
+

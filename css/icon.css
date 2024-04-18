@@ -22,7 +22,7 @@ h1 {
 
 .icon {
     color: rgb(105, 50, 255);
-    font-size: 24px;
+    font-size: 30px;
     margin-left: 10px; /* Espacio entre los iconos */
     text-decoration: none;
 }
@@ -41,4 +41,27 @@ h1 {
         font-size: 30px; /* Tamaño de los iconos para dispositivos pequeños */
         margin-left: 10px; /* Espacio entre los iconos para dispositivos pequeños */
     }
+}
+
+/* Estilos para los iconos */
+.icon-container {
+    display: flex;
+    align-items: center;
+    margin-left: auto; /* Mueve los iconos al extremo derecho */
+    flex-wrap: nowrap; /* Evita que los iconos se envuelvan y los mantiene en una sola línea */
+}
+
+.icon {
+    color: rgb(105, 50, 255);
+    font-size: 30px;
+    margin-left: 10px; /* Espacio entre los iconos */
+    text-decoration: none;
+}
+
+.icon:first-child {
+    margin-left: 0; /* Elimina el margen izquierdo del primer icono */
+}
+
+.icon:hover {
+    color: rgb(105, 50, 255);
 }

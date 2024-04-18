@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Panel de Administrador</title>
+    <link rel="stylesheet" href="../css/administrador.css">
+</head>
+<body>
+    <div class="container">
+        <div class="usuarios">
+            <h2>Administrar Usuarios</h2>
+            <!-- Aquí va la lista de usuarios con opciones para eliminar y bloquear -->
+            <ul id="lista-usuarios">
+                <!-- Cada usuario se puede representar con un elemento li -->
+                <li>Nombre Apellido - correo@ejemplo.com <button class="eliminar">Eliminar</button> <button class="bloquear">Bloquear</button></li>
+                <!-- Se pueden agregar más elementos li según la cantidad de usuarios -->
+            </ul>
+        </div>
+        <div class="productos">
+            <h2>Agregar Productos</h2>
+            <select id="tipo-producto">
+                <option value="todos">Todos</option>
+                <option value="ropa">Ropa</option>
+                <option value="figuras">Figuras</option>
+                <option value="accesorios">Accesorios</option>
+            </select>
+            <div id="formulario-producto" class="hidden">
+                <!-- Aquí se mostrará el formulario específico según el tipo de producto seleccionado -->
+            </div>
+            <button id="guardar-producto">Guardar Producto</button>
+        </div>
+    </div>
+    <div id="mensaje" class="hidden">
+        <p>Producto agregado con éxito.</p>
+        <button id="cerrar-mensaje">Cerrar</button>
+    </div>
+    <script src="../js/administrador.js"></script>
+</body>
+</html>
