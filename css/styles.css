@@ -18,13 +18,23 @@ h1 {
     margin: 0; /* Elimina el margen del título */
     display: flex; /* Utilizamos flexbox para alinear verticalmente los elementos */
     align-items: center; /* Alinea verticalmente */
-    font-size: 36px; /* Ajusta el tamaño del título */
+    position: relative;
+    font-size: 6em;
+    letter-spacing: 15px;
+    color: #fff;
+    text-transform: uppercase;
+    width: 100%;
+    text-align: center;
+    -webkit-box-reflect: below 1px linear-gradient(transparent, #0098);
+    line-height: 0.7em;
+    outline: none;
+    animation: animate 5s linear infinite;
 }
 
 .logo-image {
     height: 60px; /* Ajusta la altura del logo según sea necesario */
     /* Agrega cualquier otro estilo necesario para la imagen */
-    margin-left: 10px; /* Ajusta el margen izquierdo */
+    margin-right: 1180px; /* Ajusta el margen izquierdo */
 }
 
 section {
