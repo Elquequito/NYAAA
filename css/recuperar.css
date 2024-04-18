@@ -1,8 +1,41 @@
+/* Estilos para el mensaje de éxito */
+#success-message {
+    margin-top: 20px;
+    background-color: #f0f0f0;
+    border-radius: 10px;
+    padding: 20px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+}
+h3 {
+    margin: 0; /* Elimina el margen del título */
+    display: flex; /* Utilizamos flexbox para alinear verticalmente los elementos */
+    align-items: center; /* Alinea verticalmente */
+    font-size: 30px; /* Ajusta el tamaño del título */
+}
+
+/* Estilos para los consejos de contraseña */
+.password-tips {
+    margin-top: 15px;
+}
+
+.password-tips ol {
+    list-style-type: decimal;
+    margin-left: 20px;
+    font-size: 16px;
+    color: #333;
+}
+
+.password-tips ol li {
+    margin-bottom: 10px;
+}
+
 /* Estilos para el cuerpo de la página */
 body {
     font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
+    background-color: #c9d6ff;
+    background: linear-gradient(to right, #e2e2e2, #c9d6ff);
 }
 
 /* Estilos para el encabezado */
@@ -16,21 +49,10 @@ header {
 /* Estilos para el contenedor de la sección */
 .section-container {
     padding: 20px;
-}
-
-/* Estilos para la imagen de fondo */
-.section-container img {
-    max-width: 100%;
-    height: auto;
-    display: block;
-    margin: 0 auto;
+    text-align: center;
 }
 
 /* Estilos para el texto dentro de la sección */
-.section-container h2 {
-    color: #ff6600;
-}
-
 .section-container p {
     line-height: 1.6;
 }
@@ -59,20 +81,23 @@ header {
 
 /* Estilos para el botón de volver al inicio */
 .btn-volver {
-    position: fixed;
-    bottom: 20px;
-    right: 20px;
-    z-index: 1000; /* Asegura que el botón esté encima de otros elementos */
-    padding: 10px 20px;
+    display: inline-block;
+    margin: 10px 20px;
+    padding: 10px 15px;
     background-color: #00c3ff;
     color: #fff;
     border: none;
     border-radius: 5px;
-    font-size: 16px;
-    text-decoration: none; /* Elimina el subrayado del enlace */
+    font-size: 14px;
+    text-decoration: none;
     transition: background-color 0.3s;
 }
 
 .btn-volver:hover {
     background-color: #ff6600;
+}
+
+/* Estilos para elementos ocultos */
+.hidden {
+    display: none;
 }

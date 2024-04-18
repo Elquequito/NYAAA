@@ -91,3 +91,23 @@ p {
     font-style: italic; /* Estilo de fuente */
     margin-top: 5px; /* Espacio superior */
 }
+
+/* Estilos para el botón de volver al inicio */
+.btn-volver {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    z-index: 1000; /* Asegura que el botón esté encima de otros elementos */
+    padding: 10px 20px;
+    background-color: #00c3ff;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    text-decoration: none; /* Elimina el subrayado del enlace */
+    transition: background-color 0.3s;
+}
+
+.btn-volver:hover {
+    background-color: #ff6600;
+}

@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 
 <head>
   <meta charset="UTF-8" />
@@ -33,17 +33,13 @@
       margin-right: 5px;
     }
 
-    /* Estilo para el número de tarjeta */
-    #numeroTarjeta {
-      font-family: monospace;
-      letter-spacing: 1px;
+    /* Estilo para el número de tarjeta y CVV */
+    input[type="number"]::-webkit-inner-spin-button,
+    input[type="number"]::-webkit-outer-spin-button {
+      -webkit-appearance: none;
+      margin: 0;
     }
 
-    /* Estilo para el CVV */
-    #cvv {
-      font-family: monospace;
-      letter-spacing: 5px;
-    }
   </style>
 </head>
 
@@ -69,15 +65,18 @@
                       <input type="text" class="form-control" id="apellidos" required>
                     </div>
                     <div class="mb-3 form-group">
-                      <label for="telefono" class="form-label">Teléfono</label>
-                      <input type="text" class="form-control" id="telefono" required>
-                    </div>
-                    <div class="mb-3 form-group">
                       <label for="rut" class="form-label">Rut</label>
                       <input type="text" class="form-control" id="rut" required>
                     </div>
                   </div>
                   <div class="col-md-6">
+                    <div class="mb-3 form-group">
+                      <label for="telefono" class="form-label">Teléfono</label>
+                      <div class="input-group">
+                        <span class="input-group-text">+56</span>
+                        <input type="number" class="form-control" id="telefono" required>
+                      </div>
+                    </div>
                     <div class="mb-3 form-group">
                       <label for="region" class="form-label">Región</label>
                       <input type="text" class="form-control" id="region" required>
@@ -119,22 +118,23 @@
                     <option value="credito">Crédito</option>
                   </select>
                 </div>
+                
                 <div class="mb-3 form-group">
                   <label for="nombreTarjeta" class="form-label">Nombre en la Tarjeta</label>
                   <input type="text" class="form-control" id="nombreTarjeta" required>
                 </div>
                 <div class="mb-3 form-group">
                   <label for="numeroTarjeta" class="form-label">Número de Tarjeta</label>
-                  <input type="text" class="form-control" id="numeroTarjeta" required pattern="[0-9]{4} [0-9]{4} [0-9]{4} [0-9]{4}">
+                  <input type="number" class="form-control" id="numeroTarjeta" required>
                 </div>
                 <div class="row mb-3">
                   <div class="col">
                     <label for="fechaExp" class="form-label">Fecha de Expiración</label>
-                    <input type="text" class="form-control" id="fechaExp" required pattern="[0-9]{2}/[0-9]{4}">
+                    <input type="number" class="form-control" id="fechaExp" required>
                   </div>
                   <div class="col">
                     <label for="cvv" class="form-label">CVV</label>
-                    <input type="password" class="form-control" id="cvv" required pattern="[0-9]{3}">
+                    <input type="password" class="form-control" id="cvv" required>
                   </div>
                 </div>
                 <button type="submit" class="btn btn-primary btn-lg btn-block">Pagar</button>
@@ -145,7 +145,7 @@
       </div>
     </div>
   </section>
-
+  <a href="carrito.html" class="btn btn-primary btn-lg position-fixed top-0 start-0 m-3">Volver al Carrito</a>
   <!-- MDB -->
   <script type="text/javascript" src="js/mdb.min.js"></script>
   <!-- Custom scripts -->

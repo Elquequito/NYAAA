@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Recuperar Contraseña</title>
+    <link rel="stylesheet" href="../css/recuperar.css">
+</head>
+<body>
+    <header>
+        <h1>Recuperar Contraseña</h1>
+    </header>
+    <div class="password-tips">
+        <h3>¡Consejos para recordar tu contraseña!</h3>
+        <ol>
+            <li>Utiliza una combinación de letras mayúsculas y minúsculas.</li>
+            <li>Incluye al menos un número y un carácter especial.</li>
+            <li>Evita utilizar información personal como nombres o fechas de nacimiento.</li>
+            <li>Considera utilizar una frase fácil de recordar en lugar de una sola palabra.</li>
+            <li>Actualiza tu contraseña regularmente.</li>
+        </ol>
+    </div>
+    <div class="section-container">
+        <form id="recovery-form">
+            <p>Ingresa tu dirección de correo electrónico para recuperar tu contraseña.</p>
+            <input type="email" placeholder="Correo electrónico" required>
+            <div class="button-container">
+                <button type="submit">Enviar Correo de Recuperación</button>
+            </div>
+        </form>
+        <div id="success-message" class="hidden">
+            <p>¡Correo enviado con éxito!</p>
+        </div>
+    </div>
+    <a href="INDEX PRINCIPAL.html" class="btn-volver">Volver al Inicio</a>
+    <script src="../js/recuperacionContraseña.js"></script>
+</body>
+</html>
