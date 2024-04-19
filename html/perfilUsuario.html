@@ -2,42 +2,196 @@
 <html lang="es">
 <head>
     <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Perfil de Usuario</title>
+    <meta name="author" content="Elquequito">
+    <title>Nyaaa - Login</title>
+    <!-- import font icon (fontawesome) -->
+    <script src="https://kit.fontawesome.com/b8b432d7d3.js" crossorigin="anonymous"></script>
+    <!-- import css file (style.css) -->
     <link rel="stylesheet" href="../css/usuario.css">
 </head>
+<a href="../html/INDEX PRINCIPAL.html" class="btn-volver">Volver al Inicio</a>
 <body>
-    <header>
-        <h1>Mi Perfil</h1>
-        <img src="user_avatar.jpg" alt="Avatar" class="avatar">
-    </header>
     <div class="container">
-        <section id="historial-compras" class="section-container">
-            <h2>Historial de Compras</h2>
-            <!-- Aquí va el historial de compras del usuario -->
-            <ul>
-                <li>Compra 1 - Detalles...</li>
-                <li>Compra 2 - Detalles...</li>
-                <!-- Agrega más elementos según el historial -->
-            </ul>
-        </section>
-        <section id="seguimiento-pedido" class="section-container">
-            <h2>Seguimiento del Pedido</h2>
-            <!-- Aquí va el seguimiento de los pedidos del usuario -->
-            <p>Estado del último pedido: En tránsito</p>
-            <p>Número de seguimiento: 1234567890</p>
-        </section>
-        <section id="modificacion-datos" class="section-container">
-            <h2>Modificar Datos</h2>
-            <!-- Formulario para modificar datos -->
-            <form>
-                <label for="correo">Correo Electrónico:</label><br>
-                <input type="email" id="correo" name="correo" value="usuario@example.com"><br>
-                <label for="contrasena">Contraseña:</label><br>
-                <input type="password" id="contrasena" name="contrasena"><br>
-                <input type="submit" value="Guardar Cambios">
-            </form>
-        </section>
-    </div>
+
+        <div class="profile-card">
+            <div class="profile-header"><!-- profile header section -->
+                <div class="main-profile">
+                    <div class="profile-image"></div>
+                    <div class="profile-names">
+                        <h1 class="username">Elquequito</h1>
+                        <small class="page-title">LOLERO</small>
+                    </div>
+                </div>
+            </div>
+
+            <div class="profile-body"><!-- profile body section -->
+                <div class="profile-actions">
+                    <button class="follow">Historial de Pedidos</button>
+                    <button class="message">Editar Perfil</button>
+                    <section class="bio">
+                        <div class="bio-header">
+                            <i class="fa fa-info-circle"></i>
+                            Bio
+                        </div>
+                        <p class="bio-text">
+                            Hobbie: PAJA
+                            Sexo: Nunca
+                            Genero: Opresor
+                        </p>
+                    </section>
+                </div>
+
+                <div class="account-info">
+                    <div class="data">
+                        <div class="important-data">
+                            <section class="data-item">
+                                <h3 class="value">104</h3>
+                                <small class="title">Post</small>
+                            </section>
+                            <section class="data-item">
+                                <h3 class="value">21K</h3>
+                                <small class="title">Follower</small>
+                            </section>
+                            </section>
+                            <section class="data-item">
+                                <h3 class="value">51</h3>
+                                <small class="title">Following</small>
+                            </section>
+                        </div>
+                        <div class="other-data">
+                            <section class="data-item">
+                                <h3 class="value">41K</h3>
+                                <small class="title">Likes</small>
+                            </section>
+                            <section class="data-item">
+                                <h3 class="value">12K</h3>
+                                <small class="title">Comments</small>
+                            </section>
+                            <section class="data-item">
+                                <h3 class="value">2K</h3>
+                                <small class="title">Saved</small>
+                            </section>
+                        </div>
+                    </div>
+
+                    <div class="last-post">
+                        <div class="post-cover">
+                        </div>
+                        <h3 class="post-title">Ultima Compra</h3>
+                        <h3 class="post-title">Momoka-Shijou</h3>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div><!DOCTYPE html>
+    <html lang="es">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="author" content="Elquequito">
+        <title>Nyaaa - Perfil</title>
+        <!-- Importar fuente de iconos (fontawesome) -->
+        <script src="https://kit.fontawesome.com/b8b432d7d3.js" crossorigin="anonymous"></script>
+        <!-- Importar archivo CSS (usuario.css) -->
+        <link rel="stylesheet" href="../css/usuario.css">
+    </head>
+    <body>
+        <div class="container">
+            <div class="profile-card">
+                <div class="profile-header"><!-- Sección de encabezado del perfil -->
+                    <div class="main-profile">
+                        <div class="profile-image"></div>
+                        <div class="profile-names">
+                            <h1 class="username">Elquequito</h1>
+                            <small class="page-title">LOLERO</small>
+                        </div>
+                    </div>
+                </div>
+    
+                <div class="profile-body"><!-- Sección de cuerpo del perfil -->
+                    <div class="profile-actions">
+                        <button class="follow">Historial de Pedidos</button>
+                        <button class="message" id="editarPerfil">Editar Perfil</button>
+                        <section class="bio">
+                            <div class="bio-header">
+                                <i class="fa fa-info-circle"></i>
+                                Bio
+                            </div>
+                            <p class="bio-text">
+                                Hobbie: PAJA<br>
+                                Sexo: Nunca<br>
+                                Género: Opresor
+                            </p>
+                        </section>
+                    </div>
+    
+                    <div class="account-info"><!-- Información de la cuenta -->
+                        <!-- Formulario de edición de perfil -->
+                        <form class="edit-profile" style="display: none;">
+                            <input type="text" name="nombre" placeholder="Nombre">
+                            <input type="text" name="apellidos" placeholder="Apellidos">
+                            <input type="email" name="correo" placeholder="Correo electrónico">
+                            <input type="password" name="contraseña" placeholder="Contraseña">
+                            <button type="submit" id="guardarPerfil">Guardar</button>
+                        </form>
+    
+                        <div class="data">
+                            <div class="important-data">
+                                <section class="data-item">
+                                    <h3 class="value">104</h3>
+                                    <small class="title">Post</small>
+                                </section>
+                                <section class="data-item">
+                                    <h3 class="value">21K</h3>
+                                    <small class="title">Follower</small>
+                                </section>
+                                <section class="data-item">
+                                    <h3 class="value">51</h3>
+                                    <small class="title">Following</small>
+                                </section>
+                            </div>
+                            <div class="other-data">
+                                <section class="data-item">
+                                    <h3 class="value">41K</h3>
+                                    <small class="title">Likes</small>
+                                </section>
+                                <section class="data-item">
+                                    <h3 class="value">12K</h3>
+                                    <small class="title">Comments</small>
+                                </section>
+                                <section class="data-item">
+                                    <h3 class="value">2K</h3>
+                                    <small class="title">Saved</small>
+                                </section>
+                            </div>
+                        </div>
+    
+                        <div class="last-post"><!-- Última publicación -->
+                            <div class="post-cover"></div>
+                            <h3 class="post-title">Última Compra</h3>
+                            <h3 class="post-title">Momoka-Shijou</h3>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    
+        <!-- Botón para volver al inicio -->
+        <a href="../html/INDEX PRINCIPAL.html" class="btn-volver">Volver al Inicio</a>
+    
+        <script>
+            // Función para mostrar el formulario de edición al hacer clic en "Editar Perfil"
+            document.getElementById('editarPerfil').addEventListener('click', function() {
+                document.querySelector('.edit-profile').style.display = 'block';
+                document.querySelector('.account-info').style.display = 'none';
+            });
+        </script>
+    </body>
+    </html>
+    
 </body>
 </html>

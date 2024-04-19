@@ -124,3 +124,36 @@ p {
 .btn-volver:hover {
     background-color: #ff6600;
 }
+
+@media screen and (max-width: 768px) {
+    header {
+        padding: 20px; /* Reducimos el padding */
+        flex-direction: column; /* Cambiamos la dirección del flexbox a columna */
+        align-items: center; /* Alineamos los elementos al centro */
+    }
+
+    .logo-image {
+        height: 60px; /* Reduce la altura del logo */
+        margin-right: 10px; /* Añade margen superior */
+    }
+
+    h1 {
+        font-size: 3em; /* Ajusta el tamaño del título */
+        margin-top: 10px; /* Añade margen superior */
+        text-align: center; /* Centra el título */
+        letter-spacing: 5px; /* Ajusta el espaciado entre letras */
+    }
+
+    .button-container {
+        margin-top: 10px; /* Reducimos el margen superior */
+    }
+
+    section {
+        padding: 10px; /* Reducimos el padding */
+        margin: 10px 0; /* Ajustamos el margen */
+    }
+
+    .figure-box {
+        width: calc(250%); /* Ajustar el ancho para que quepan dos figuras en una fila */
+    }
+}

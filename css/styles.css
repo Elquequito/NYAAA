@@ -76,10 +76,10 @@ img {
     }
 
     h1 {
-        font-size: 100px; /* Aumenta el tamaño del título */
+        font-size: 3em; /* Ajusta el tamaño del título */
         margin-top: 10px; /* Añade margen superior */
         text-align: center; /* Centra el título */
-        font-size: 3px; /* Tamaño del título */
+        letter-spacing: 5px; /* Ajusta el espaciado entre letras */
     }
 
     .button-container {
