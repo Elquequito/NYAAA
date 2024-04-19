@@ -7,34 +7,78 @@
     <link rel="stylesheet" href="../css/administrador.css">
 </head>
 <body>
-    <div class="container">
-        <div class="usuarios">
-            <h2>Administrar Usuarios</h2>
-            <!-- Aquí va la lista de usuarios con opciones para eliminar y bloquear -->
-            <ul id="lista-usuarios">
-                <!-- Cada usuario se puede representar con un elemento li -->
-                <li>Nombre Apellido - correo@ejemplo.com <button class="eliminar">Eliminar</button> <button class="bloquear">Bloquear</button></li>
-                <!-- Se pueden agregar más elementos li según la cantidad de usuarios -->
-            </ul>
-        </div>
-        <div class="productos">
-            <h2>Agregar Productos</h2>
-            <select id="tipo-producto">
-                <option value="todos">Todos</option>
-                <option value="ropa">Ropa</option>
-                <option value="figuras">Figuras</option>
-                <option value="accesorios">Accesorios</option>
-            </select>
-            <div id="formulario-producto" class="hidden">
-                <!-- Aquí se mostrará el formulario específico según el tipo de producto seleccionado -->
-            </div>
-            <button id="guardar-producto">Guardar Producto</button>
-        </div>
-    </div>
-    <div id="mensaje" class="hidden">
-        <p>Producto agregado con éxito.</p>
-        <button id="cerrar-mensaje">Cerrar</button>
-    </div>
+    <header class="header">
+        <h1>Panel de Administrador</h1>
+        <img src="../img/ahegao.jpg" alt="Logo" class="logo-image">
+    </header>
+
+    <section class="section-container">
+        <h2>Usuarios</h2>
+        <table>
+            <thead>
+                <tr>
+                    <th>Nombre</th>
+                    <th>Email</th>
+                    <th>Acciones</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Simon Silva</td>
+                    <td>Fueraperuanos@gmail.com</td>
+                    <td>
+                        <button onclick="confirmDelete('Usuario 1')">Eliminar</button>
+                        <button onclick="confirmAction('bloquear', 'Usuario 1')">Bloquear</button>
+                    </td>
+                </tr>
+                <tr>
+                    <td>Axel Muñoz</td>
+                    <td>Arribaelcomunismo123@gmail.com</td>
+                    <td>
+                        <button onclick="confirmDelete('Usuario 2')">Eliminar</button>
+                        <button onclick="confirmAction('bloquear', 'Usuario 2')">Bloquear</button>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+    </section>
+
+    <section class="section-container">
+        <h2>Agregar Producto</h2>
+        <form>
+            <label for="nombre">Nombre:</label>
+            <input type="text" id="nombre" name="nombre" required><br>
+            <label for="precio">Precio:</label>
+            <input type="text" id="precio" name="precio" required><br>
+            <label for="descripcion">Descripción:</label><br>
+            <textarea id="descripcion" name="descripcion" required></textarea><br>
+            <label for="detalles">Detalles:</label><br>
+            <textarea id="detalles" name="detalles" required></textarea><br>
+            <input type="submit" value="Agregar Producto">
+        </form>
+    </section>
+
+    <a href="../html/INDEX PRINCIPAL.html" class="volver-btn">Volver al Inicio</a>
+
     <script src="../js/administrador.js"></script>
+    <script>
+        function goBack() {
+            window.history.back();
+        }
+
+        function confirmDelete(usuario) {
+            if (confirm(`¿Seguro que quieres eliminar al usuario ${usuario}?`)) {
+                alert("Usuario eliminado con éxito");
+                // Aquí puedes agregar la lógica para eliminar el usuario si es necesario
+            }
+        }
+
+        function confirmAction(usuario) {
+            if (confirm(`¿Seguro que quieres bloquear al usuario ${usuario}?`)) {
+                alert("Usuario bloqueado con éxito");
+                // Aquí puedes agregar la lógica para eliminar el usuario si es necesario
+            }
+        }
+    </script>
 </body>
 </html>

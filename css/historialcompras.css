@@ -51,12 +51,31 @@ h1 {
     }
 
     h1 {
-        font-size: 3em;
+        font-size: 2em;
         margin-top: 10px;
         text-align: center;
         letter-spacing: 5px;
     }
+
+    .button {
+        position: fixed;
+        bottom: 20px; /* Cambiamos la posición a abajo */
+        left: 20px; /* Cambiamos la posición a la izquierda */
+        padding: 10px 20px;
+        background-color: #00c3ff;
+        color: #fff;
+        border: none;
+        border-radius: 5px;
+        font-size: 16px;
+        cursor: pointer;
+        transition: background-color 0.3s, color 0.3s;
+    }
+    
+    .button:hover {
+        background-color: #ff6600;
+    }
 }
+
 
 /* Estilos para el botón de volver al inicio */
 .btn-volver {
@@ -127,4 +146,19 @@ h1 {
 
 .product-details p {
     margin: 5px 0; /* Ajustamos el margen del texto */
+}
+
+.button {
+    padding: 10px 20px;
+    background-color: #00c3ff;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+.button:hover {
+    background-color: #0056b3;
 }

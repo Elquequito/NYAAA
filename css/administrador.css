@@ -2,22 +2,16 @@ body {
     font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
-    background-color: #c9d6ff;
-    background: linear-gradient(to right, #e2e2e2, #c9d6ff);
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-direction: column; 
+    background-color: #fff;
 }
 
-header {
+.header {
     background-color: #ff6600;
     color: #fff;
-    padding: 49px;
+    padding: 40px;
     display: flex;
-    justify-content: center;
+    justify-content: flex-start;
     align-items: center;
-    position: relative;
 }
 
 h1 {
@@ -26,40 +20,42 @@ h1 {
     align-items: center;
     position: relative;
     font-size: 3em;
-    letter-spacing: 10px;
+    letter-spacing: 15px;
     color: #fff;
     text-transform: uppercase;
     width: 100%;
-    text-align: left;
+    text-align: center;
     -webkit-box-reflect: below 1px linear-gradient(transparent, #0098);
-    line-height: 0.7em;
+    line-height: 0.9em;
     outline: none;
     animation: animate 5s linear infinite;
 }
 
 .logo-image {
-    height: 60px;
-    margin-right: 1243px;
-    border-radius: 50%;
+    border-radius: 10px;
+    height: 80px;
+    margin-right: 980px;
 }
 
 .container {
-    background-color: #fff;
-    border-radius: 30px;
-    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.35);
-    position: relative;
-    overflow: hidden;
-    width: 768px;
-    max-width: 100%;
-    min-height: 480px;
-    margin-top: 90px;
+    max-width: 960px;
+    margin: auto;
     padding: 20px;
 }
 
-.container h2 {
-    color: #ff6600;
-    text-align: center;
-    margin-bottom: 20px;
+.section-container {
+    padding: 20px;
+    margin: 20px 0;
+    background-color:  #ff6600;
+    border-radius: 10px;
+}
+
+h2 {
+    color: #fff;
+}
+
+p {
+    line-height: 1.6;
 }
 
 .button-container {
@@ -68,16 +64,13 @@ h1 {
 }
 
 .button-container button {
-    background-color: orange;
+    padding: 10px 20px;
+    margin: 10px;
+    border: none;
+    border-radius: 5px;
+    background-color: #00c3ff;
     color: #fff;
     font-size: 16px;
-    padding: 10px 20px;
-    border: none;
-    border-radius: 8px;
-    font-weight: 600;
-    letter-spacing: 0.5px;
-    text-transform: uppercase;
-    margin: 10px;
     cursor: pointer;
     transition: background-color 0.3s;
 }
@@ -86,46 +79,73 @@ h1 {
     background-color: #ff6600;
 }
 
-.section-container {
-    padding: 20px;
-    margin: 20px;
-    background-color: #f0f0f0;
-    border-radius: 10px;
-}
-
-.section-container select {
-    width: 100%;
-    padding: 10px;
-    border-radius: 8px;
-    border: 1px solid #ccc;
-    margin-bottom: 20px;
-    outline: none;
-}
-
-.section-container input[type="text"], 
-.section-container input[type="number"],
-.section-container textarea {
-    width: 100%;
-    padding: 10px;
-    border-radius: 8px;
-    border: 1px solid #ccc;
-    margin-bottom: 20px;
-    outline: none;
-}
-
-#mensaje {
+/* Estilos para el botón de volver al inicio */
+.volver-btn {
     position: fixed;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    background-color: rgba(255, 255, 255, 0.9);
-    padding: 20px;
-    border-radius: 10px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    bottom: 20px;
+    right: 20px;
     z-index: 1000;
-    text-align: center;
+    padding: 10px 20px;
+    background-color: #00c3ff;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    text-decoration: none;
+    transition: background-color 0.3s;
 }
 
-#mensaje.hidden {
-    display: none;
+.volver-btn:hover {
+    background-color: #ff6600;
+}
+
+@media screen and (max-width: 768px) {
+    header {
+        padding: 20px;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .logo-image {
+        height: 60px;
+        margin-right: 10px;
+    }
+
+    h1 {
+        font-size: 3em;
+        margin-top: 10px;
+        text-align: center;
+        letter-spacing: 5px;
+    }
+
+    .button-container {
+        margin-top: 10px;
+    }
+
+    .container {
+        padding: 10px;
+    }
+
+    section {
+        padding: 10px;
+        margin: 10px 0;
+    }
+
+    .figure-box {
+        width: calc(250%);
+    }
+}
+
+table {
+    font-family: arial, sans-serif;
+    border-collapse: collapse;
+    width: 100%;
+    color: #fff;
+}
+
+td, th {
+    border: 1px solid #000000; /* Establece un borde de 1px sólido negro para todas las celdas y encabezados */
+    text-align: left;
+    padding: 8px;
+    background-color: #00c3ff; /* Establece un color de fondo gris claro para todas las celdas y encabezados */
 }
