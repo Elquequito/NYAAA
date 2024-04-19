@@ -1,0 +1,130 @@
+/* Estilos generales */
+body, html {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+}
+
+.container {
+    max-width: 960px;
+    margin: auto;
+    padding: 20px;
+}
+
+/* Estilos para el encabezado */
+.header {
+    background-color: #ff6600;
+    color: #fff;
+    padding: 50px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+h1 {
+    margin: 0; /* Elimina el margen del título */
+    display: flex; /* Utilizamos flexbox para alinear verticalmente los elementos */
+    align-items: center; /* Alinea verticalmente */
+    position: relative;
+    font-size: 3em;
+    letter-spacing: 15px;
+    color: #fff;
+    text-transform: uppercase;
+    width: 100%;
+    text-align: center;
+    -webkit-box-reflect: below 1px linear-gradient(transparent, #0098);
+    line-height: 0.7em;
+    outline: none;
+    animation: animate 5s linear infinite;
+}
+
+/* Estilos para dispositivos pequeños */
+@media (max-width: 768px) {
+    .container {
+        padding: 10px;
+    }
+
+    .header {
+        padding: 20px;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    h1 {
+        font-size: 3em;
+        margin-top: 10px;
+        text-align: center;
+        letter-spacing: 5px;
+    }
+}
+
+/* Estilos para el botón de volver al inicio */
+.btn-volver {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    z-index: 1000; /* Asegura que el botón esté encima de otros elementos */
+    padding: 10px 20px;
+    background-color: #00c3ff;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    text-decoration: none; /* Elimina el subrayado del enlace */
+    transition: background-color 0.3s;
+}
+
+.btn-volver:hover {
+    background-color: #ff6600;
+}
+
+/* Estilos para el historial de compras */
+.shopping-cart {
+    background-color: #ff6600; /* Cambiamos el color de fondo a naranja */
+    padding: 20px; /* Reducimos el padding para ajustar el contenido */
+    border-radius: 10px; /* Agregamos bordes redondeados */
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1); /* Agregamos una sombra suave */
+}
+
+.shopping-cart h2 {
+    font-size: 3em; /* Ajustamos el tamaño del título */
+    margin: 0; /* Eliminamos el margen */
+    text-align: center; /* Centramos el texto */
+    color: #fff; /* Cambiamos el color del texto a blanco */
+    margin-bottom: 20px; /* Añadimos espacio inferior */
+}
+
+.cart-item {
+    display: flex;
+    align-items: center;
+    padding: 10px;
+    background-color: #f4f4f4;
+    margin-bottom: 20px; /* Aumentamos el espacio entre los elementos */
+    border-radius: 10px; /* Agregamos bordes redondeados */
+    transition: border-color 0.3s; /* Agregamos una transición para el cambio de color del borde */
+}
+
+.cart-item:hover {
+    border: 2px solid #ff6600; /* Cambiamos el color del borde al pasar el cursor */
+}
+
+.product-image {
+    width: 80px;
+    height: auto;
+    border-radius: 5px;
+    margin-right: 20px; /* Aumentamos el margen derecho */
+}
+
+.product-details {
+    flex-grow: 1;
+}
+
+.product-name {
+    margin: 0;
+    font-size: 1.2em; /* Ajustamos el tamaño del nombre del producto */
+    color: #333; /* Cambiamos el color del texto */
+}
+
+.product-details p {
+    margin: 5px 0; /* Ajustamos el margen del texto */
+}
