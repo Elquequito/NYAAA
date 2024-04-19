@@ -166,3 +166,101 @@ p {
 .btn-volver:hover {
     background-color: #ff6600;
 }
+
+@media screen and (max-width: 768px) {
+    header {
+        padding: 20px; /* Reducimos el padding */
+        flex-direction: column; /* Cambiamos la dirección del flexbox a columna */
+        align-items: center; /* Alineamos los elementos al centro */
+    }
+
+    .logo-image {
+        height: 60px; /* Reduce la altura del logo */
+        margin-right: 10px; /* Añade margen superior */
+    }
+
+    h1 {
+        font-size: 3em; /* Ajusta el tamaño del título */
+        margin-top: 10px; /* Añade margen superior */
+        text-align: center; /* Centra el título */
+        letter-spacing: 5px; /* Ajusta el espaciado entre letras */
+    }
+
+    .button-container {
+        margin-top: 10px; /* Reducimos el margen superior */
+    }
+
+    section {
+        padding: 10px; /* Reducimos el padding */
+        margin: 10px 0; /* Ajustamos el margen */
+    }
+
+    .figure-box {
+        width: calc(350%); /* Ajustar el ancho para que quepan dos figuras en una fila */
+        float: right;
+    }
+
+    /* Estilos para la columna de filtros */
+    .filtro {
+        float: left; /* Coloca la columna a la izquierda */
+        width: 344px; /* Ancho de la columna */
+        padding: 20px;
+        background-color: #f5f5f5;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    }
+
+    /* Estilos para las opciones de filtro */
+    .filtro-option {
+        margin-bottom: 15px;
+    }
+
+    .filtro-option label {
+        display: block;
+        margin-bottom: 5px;
+    }
+
+    .filtro-option select {
+        width: 100%;
+        padding: 5px;
+        border: 1px solid #ccc;
+        border-radius: 1px;
+        background-color: #fff;
+    }
+
+/* Estilos para el catálogo */
+    #accesorios {
+        margin-right: 100px; /* Para dejar espacio para la columna de filtros */
+    }
+
+    .section-container {
+        padding: 0px;
+        margin: 0px;
+        background-color: rgb(221, 221, 221);
+        border-radius: 10px;
+    }
+    
+    h2 {
+        color: #ff6600;
+    }
+
+}
+
+@media screen and (max-width: 768px) {
+    #accesorios {
+        display: flex;
+        flex-wrap: wrap; /* Permitir que los elementos se envuelvan en múltiples líneas */
+        justify-content: space-around; /* Distribuir los elementos uniformemente */
+    }
+
+    #accesorios .accesorios-box {
+        width: calc(55% - 0px); /* Ancho de las cajas de accesorios */
+        margin: 1%; /* Margen entre las cajas */
+    }
+
+    /* Ajuste para el último elemento en una fila */
+    #accesorios .accesorios-box:nth-child(2n) {
+        margin-right: 0; /* Elimina el margen derecho del último elemento */
+    }
+}
+
+
