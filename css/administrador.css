@@ -1,3 +1,4 @@
+/* CSS */
 body {
     font-family: Arial, sans-serif;
     margin: 0;
@@ -64,7 +65,7 @@ p {
 }
 
 .button-container button {
-    padding: 10px 20px;
+    padding: 12px 24px; /* Aumenta el padding para agrandar el botón */
     margin: 10px;
     border: none;
     border-radius: 5px;
@@ -112,7 +113,7 @@ p {
     }
 
     h1 {
-        font-size: 3em;
+        font-size: 2em;
         margin-top: 10px;
         text-align: center;
         letter-spacing: 5px;
@@ -146,6 +147,64 @@ table {
 td, th {
     border: 1px solid #000000; /* Establece un borde de 1px sólido negro para todas las celdas y encabezados */
     text-align: left;
-    padding: 8px;
+    padding: 12px; /* Aumenta el padding para agrandar las celdas */
     background-color: #00c3ff; /* Establece un color de fondo gris claro para todas las celdas y encabezados */
+}
+
+/* CSS adicional para el botón Agregar Producto y el campo Precio */
+#precio {
+    padding: 8px 100px;
+}
+
+#nombre {
+    padding: 8px 100px;
+}
+
+#descripcion {
+    padding: 12px 105px;
+}
+
+#detalles {
+    padding: 4px 105px;
+}
+
+input[type="submit"] {
+    padding: 12px 24px; /* Ajusta el padding del botón Agregar Producto */
+    border: none;
+    border-radius: 5px;
+    background-color: #00c3ff;
+    color: #fff;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+input[type="submit"]:hover {
+    background-color: #ff6600;
+}
+
+@media screen and (max-width: 768px) {
+    table {
+        font-size: 12px; /* Reducir el tamaño de fuente para pantallas pequeñas */
+    }
+
+    td, th {
+        padding: 8px; /* Ajuste del padding para pantallas pequeñas */
+    }
+
+    #precio {
+        padding: 8px 50px;
+    }
+    
+    #nombre {
+        padding: 8px 50px;
+    }
+    
+    #descripcion {
+        padding: 12px 60px;
+    }
+    
+    #detalles {
+        padding: 4px 60px;
+    }
 }

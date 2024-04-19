@@ -46,14 +46,16 @@
     <section class="section-container">
         <h2>Agregar Producto</h2>
         <form>
-            <label for="nombre">Nombre:</label>
+            <label for="nombre">Nombre:</label><br>
             <input type="text" id="nombre" name="nombre" required><br>
-            <label for="precio">Precio:</label>
+            <label for="precio">Precio:</label><br>
             <input type="text" id="precio" name="precio" required><br>
             <label for="descripcion">Descripción:</label><br>
-            <textarea id="descripcion" name="descripcion" required></textarea><br>
+            <textarea id="descripcion" name="descripcion" rows="4" required></textarea><br>
             <label for="detalles">Detalles:</label><br>
-            <textarea id="detalles" name="detalles" required></textarea><br>
+            <textarea id="detalles" name="detalles" rows="6" required></textarea><br>
+            <label for="imagen">Imagen:</label><br>
+            <input type="file" id="imagen" name="imagen" accept="image/*"><br>
             <input type="submit" value="Agregar Producto">
         </form>
     </section>

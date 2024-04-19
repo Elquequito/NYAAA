@@ -302,7 +302,7 @@ body {
 
 .edit-profile input,
 .edit-profile textarea {
-    width: 100%;
+    width: 300px;
     padding: 10px;
     background-color: transparent;
     border: 1px solid var(--border-color);
@@ -351,3 +351,61 @@ body {
 .message:hover, .btn-historial:hover {
     background-color: var(--accent-color);
 }
+
+/* Agrega este media query al final de tu archivo CSS */
+@media screen and (max-width: 768px) {
+    .edit-profile {
+        position: fixed;
+        bottom: 0; /* Cambia la posición a la parte inferior */
+        left: 0;
+        width: 100%;
+        height: auto; /* Usa altura automática para adaptarse al contenido */
+        background-color: rgba(0, 0, 0, 0.7); /* Fondo semitransparente */
+        display: flex;
+        justify-content: center;
+        align-items: flex-end; /* Alinea el contenido hacia abajo */
+        z-index: 999; /* Asegura que el formulario esté encima de otros elementos */
+        animation: slideIn 0.5s forwards; /* Animación de entrada desde abajo */
+    }
+    
+    @keyframes slideIn {
+        from { transform: translateY(100%); }
+        to { transform: translateY(0); }
+    }
+
+    .edit-profile form {
+        width: 90%; /* Ajusta el ancho del formulario */
+        max-width: 400px; /* Ancho máximo del formulario */
+        padding: 20px;
+        background-color: var(--secondary-bg);
+        border-radius: 10px;
+        margin-bottom: 20px; /* Espaciado inferior */
+    }
+    
+    .edit-profile input,
+    .edit-profile textarea {
+        width: 100%;
+        padding: 10px;
+        margin-bottom: 10px; /* Espaciado inferior entre los campos */
+        background-color: transparent;
+        border: 1px solid var(--border-color);
+        border-radius: 5px;
+        color: var(--primary-color);
+    }
+    
+    .edit-profile button {
+        width: 100%;
+        padding: 10px;
+        background-color: var(--accent-bg);
+        color: var(--primary-color);
+        border: none;
+        border-radius: 5px;
+        cursor: pointer;
+        transition: background-color 0.3s;
+    }
+    
+    .edit-profile button:hover {
+        background-color: var(--accent-color);
+    }
+}
+
