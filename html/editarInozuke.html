@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Editar Producto</title>
+    <link rel="stylesheet" href="../css/editarInozuke.css"> 
+</head>
+<body>
+    <header class="header">
+        <h1>Panel de Administrador</h1>
+        <img src="../img/ahegao.jpg" alt="Logo" class="logo-image">
+    </header>
+
+    <section class="section-container">
+        <h2>Editar Producto</h2>
+        <div class="edit-product-container">
+            <div class="product-image">
+                <img src="../img/inozuke.jpg" alt="Imagen del producto">
+            </div>
+            <div class="product-edit-form">
+                <form id="edit-form">
+                    <label for="nombre">Nombre:</label><br>
+                    <input type="text" id="nombre" name="nombre" required><br>
+                    <label for="precio">Precio:</label><br>
+                    <input type="text" id="precio" name="precio" required><br>
+                    <label for="descripcion">Descripción:</label><br>
+                    <textarea id="descripcion" name="descripcion" rows="4" required></textarea><br>
+                    <label for="detalles">Detalles:</label><br>
+                    <textarea id="detalles" name="detalles" rows="6" required></textarea><br>
+                    <label for="imagen">Imagen:</label><br>
+                    <input type="file" id="imagen" name="imagen" accept="image/*"><br>
+                    <input type="submit" value="Guardar Cambios">
+                    <button id="eliminar-btn">Eliminar Producto</button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <a href="../html/INDEX-PRINCIPAL.html" class="volver-btn">Volver al Inicio</a>
+
+    <script>
+        // Capturamos el formulario
+        const form = document.getElementById('edit-form');
+        const eliminarBtn = document.getElementById('eliminar-btn');
+
+        // Agregamos un evento de escucha para el envío del formulario
+        form.addEventListener('submit', function(event) {
+            // Prevenimos el comportamiento predeterminado del formulario
+            event.preventDefault();
+            // Mostramos un mensaje de éxito
+            alert('Producto modificado con éxito');
+            // Volvemos a la página anterior
+            window.history.back();
+        });
+
+        // Agregamos un evento de clic al botón de eliminar
+        eliminarBtn.addEventListener('click', function() {
+            // Confirmamos si realmente desea eliminar el producto
+            if (confirm('¿Seguro que quieres eliminar este producto?')) {
+                alert('Producto Eliminado con Éxito');
+                // Aquí puedes agregar la lógica para eliminar el producto si es necesario
+                window.history.back(); // Volvemos a la página anterior después de eliminar
+            }
+        });
+    </script>
+
+</body>
+</html>

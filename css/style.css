@@ -32,6 +32,28 @@ main{
     margin-bottom: 80px;
 }
 
+/* Estilos para los botones */
+.button-container {
+    text-align: center;
+    margin-top: 20px;
+}
+
+.button-container button {
+    padding: 10px 20px;
+    margin: 10px;
+    border: none;
+    border-radius: 5px;
+    background-color: #ff6600;
+    color: #fff;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.button-container button:hover {
+    background-color: #ff6600;
+}
+
 .imagen{
     border-style: solid;
     color: #666;
@@ -304,7 +326,17 @@ footer{
     color: #222;
 }
 
-
+@media screen and (max-width: 768px) {
+    .button-container {
+      text-align: center;
+      margin-top: 10px; /* Ajusta este valor según sea necesario */
+    }
+  
+    .button-container button {
+      margin: 5px; /* Ajusta este valor según sea necesario */
+    }
+  }
+  
 
 
 

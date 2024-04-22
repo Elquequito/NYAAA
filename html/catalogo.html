@@ -9,7 +9,7 @@
     <link rel="stylesheet" href="../css/icon.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
 </head>
-<a href="../html/INDEX PRINCIPAL.html" class="btn-volver">Volver al Inicio</a>
+<a href="../html/INDEX-PRINCIPAL.html" class="btn-volver">Volver al Inicio</a>
 <body>
     <header>
         <h1>Catálogo de Figuras</h1>
@@ -20,6 +20,15 @@
             <a href="login.html" class="icon"><i class="fas fa-sign-in-alt"></i></a>
         </div>
     </header>
+
+    <!-- Botones linkeables -->
+    <div class="button-container">
+        <button onclick="location.href='../html/ropa.html'">Ropa</button>
+        <button onclick="location.href='../html/catalogo.html'">Figuras</button>
+        <button onclick="location.href='../html/accesorios.html'">Accesorios</button>
+        <button onclick="location.href='../html/retiros.html'">Retiros y Despachos</button>
+    </div>
+
     <div class="section-container">
         <div class="filtro">
             <h2>Filtros</h2>
@@ -107,118 +116,7 @@
                 <p class="stock-message">Disponible en línea</p> <!-- Nuevo mensaje para indicar el stock -->
             </div>
 
-            <!-- Figura 6 -->
-            <div class="figure-box" data-precio="30" data-marca="Tamashi" data-tienda="Santiasco" data-stock="disponible" onclick="mostrarDetallesFujiwara()">
-                <img src="../img/chika.jpg" alt="Figura 6">
-                <p>Chika Fujiwara</p>
-                <p>$109.990</p>
-                <p class="stock-message">Disponible en línea</p> <!-- Nuevo mensaje para indicar el stock -->
-            </div>
-
-            <!-- Figura 7 -->
-            <div class="figure-box" data-precio="30" data-marca="Bandai" data-tienda="Concepción" data-stock="agotado" onclick="mostrarDetallesShinomiya()">
-                <img src="../img/kaguya.jpg" alt="Figura 7">
-                <p>Kaguya Shinomiya</p>
-                <p>$109.990</p>
-                <p class="stock-message">Agotado en línea</p> <!-- Nuevo mensaje para indicar el stock -->
-            </div>
-
-            <!-- Figura 8 -->
-            <div class="figure-box" data-precio="30" data-marca="Tamashi" data-tienda="Santiasco" data-stock="disponible" onclick="mostrarDetallesYorForger()">
-                <img src="../img/yor.jpg" alt="Figura 8">
-                <p>Yor Forger</p>
-                <p>$84.990</p>
-                <p class="stock-message">Disponible en línea</p> <!-- Nuevo mensaje para indicar el stock -->
-            </div>
-
-            <!-- Figura 9 -->
-            <div class="figure-box" data-precio="30" data-marca="Bandai" data-tienda="Talca" data-stock="agotado" onclick="mostrarDetallesItsuki()">
-                <img src="../img/itsuki.jpg" alt="Figura 9">
-                <p>Itsuki Nakano</p>
-                <p>$24.990</p>
-                <p class="stock-message">Agotado en línea</p> <!-- Nuevo mensaje para indicar el stock -->
-            </div>
-
-            <!-- Figura 10 -->
-            <div class="figure-box" data-precio="30" data-marca="Tamashi" data-tienda="Concepción" data-stock="disponible" onclick="mostrarDetallesKaede()">
-                <img src="../img/takagaki.jpg" alt="Figura 10">
-                <p>Kaede Takagaki</p>
-                <p>$24.990</p>
-                <p class="stock-message">Disponible en línea</p> <!-- Nuevo mensaje para indicar el stock -->
-            </div>
-
-            <!-- Figura 11 -->
-            <div class="figure-box" data-precio="30" data-marca="Bandai" data-tienda="Santiasco" data-stock="disponible" onclick="mostrarDetallesNameless()">
-                <img src="../img/nameless.jpg" alt="Figura 11">
-                <p>The Nameless King</p>
-                <p>$95.990</p>
-                <p class="stock-message">Disponible en línea</p> <!-- Nuevo mensaje para indicar el stock -->
-            </div>
-
-            <!-- Figura 12 -->
-            <div class="figure-box" data-precio="30" data-marca="Banpresto" data-tienda="Talca" data-stock="disponible" onclick="mostrarDetallesErza()">
-                <img src="../img/erza.jpg" alt="Figura 12">
-                <p>Erza Scarlet</p>
-                <p>$49.990</p>
-                <p class="stock-message">Disponible en línea</p> <!-- Nuevo mensaje para indicar el stock -->
-            </div>
-
-            <!-- Figura 13 -->
-            <div class="figure-box" data-precio="30" data-marca="Bandai" data-tienda="Concepción" data-stock="disponible" onclick="mostrarDetallesEmilia()">
-                <img src="../img/emilia.jpg" alt="Figura 13">
-                <p>Emilia Memory Snow</p>
-                <p>$51.990</p>
-                <p class="stock-message">Disponible en línea</p> <!-- Nuevo mensaje para indicar el stock -->
-            </div>
-
-            <!-- Figura 14 -->
-            <div class="figure-box" data-precio="30" data-marca="Banpresto" data-tienda="Santiasco" data-stock="disponible" onclick="mostrarDetallesHaruna()">
-                <img src="../img/haruna.jpg" alt="Figura 14">
-                <p>Haruna Sairenji</p>
-                <p>$49.990</p>
-                <p class="stock-message">Disponible en línea</p> <!-- Nuevo mensaje para indicar el stock -->
-            </div>
-
-            <!-- Figura 15 -->
-            <div class="figure-box" data-precio="30" data-marca="Bandai" data-tienda="Talca" data-stock="agotado" onclick="mostrarDetallesRam()">
-                <img src="../img/ram.jpg" alt="Figura 15">
-                <p>Ram Banpresto Chronicle</p>
-                <p>$39.990</p>
-                <p class="stock-message">Agotado en línea</p> <!-- Nuevo mensaje para indicar el stock -->
-            </div>
-
-            <!-- Figura 16 -->
-            <div class="figure-box" data-precio="30" data-marca="Banpresto" data-tienda="Concepción" data-stock="agotado" onclick="mostrarDetallesRanko()">
-                <img src="../img/ranko.jpg" alt="Figura 16">
-                <p>Ranko Kanzaki Special Ver.</p>
-                <p>$39.990</p>
-                <p class="stock-message">Agotado en línea</p> <!-- Nuevo mensaje para indicar el stock -->
-            </div>
-
-            <!-- Figura 17 -->
-            <div class="figure-box" data-precio="30" data-marca="Tamashi" data-tienda="Santiasco" data-stock="disponible" onclick="mostrarDetallesUtahime()">
-                <img src="../img/utahime.jpg" alt="Figura 17">
-                <p>Utahime Iori</p>
-                <p>$39.990</p>
-                <p class="stock-message">Disponible en línea</p> <!-- Nuevo mensaje para indicar el stock -->
-            </div>
-
-            <!-- Figura 18 -->
-            <div class="figure-box" data-precio="30" data-marca="Bandai" data-tienda="Talca" data-stock="disponible" onclick="mostrarDetallesKanade()">
-                <img src="../img/kanade.jpg" alt="Figura 18">
-                <p>Kanade Hayami</p>
-                <p>$27.990</p>
-                <p class="stock-message">Disponible en línea</p> <!-- Nuevo mensaje para indicar el stock -->
-            </div>
-            <!-- Figura 19 -->
-            <div class="figure-box" data-precio="50" data-marca="Banpresto" data-tienda="Talca" data-stock="agotado" onclick="mostrarDetallesAsuna()">
-                <img src="../img/Asuna Swimsuit/Asuna full-body.jpeg" alt="Figura 19">
-                <p>Asuna Swimsuit</p>
-                <p>$24.990</p>
-                <p class="stock-message">Agotado en línea</p> <!-- Nuevo mensaje para indicar el stock -->
-            </div>
-
-            <!-- Figura 20 -->
+            <!-- Figura 26 -->
             <div class="figure-box" data-precio="25" data-marca="Banpresto" data-tienda="Concepción" data-stock="agotado" onclick="mostrarDetallesItadori()">
                 <img src="../img/gallitoItadori.jpg" alt="Figura 19">
                 <p>Gallito de Pelea Itadori</p>
@@ -237,12 +135,6 @@
     <script>
         function mostrarDetalles() {
             window.location.href = 'rem_relax.html'; // Reemplaza 'detalles.html' con la ruta a tu HTML de descripciones
-        }
-    </script>
-    
-    <script>
-        function mostrarDetallesAsuna() {
-            window.location.href = 'Asuna-Swimsuit.html'; // Reemplaza 'detalles.html' con la ruta a tu HTML de descripciones
         }
     </script>
 
@@ -276,83 +168,6 @@
         }
     </script>
 
-    <script>
-        function mostrarDetallesFujiwara() {
-            window.location.href = 'Fujiwara.html'; // Reemplaza 'detalles html' con la ruta a tu html de descripciones
-        }
-    </script>
-
-    <script>
-        function mostrarDetallesShinomiya() {
-            window.location.href = 'Kaguya-Shinomiya.html'; // Reemplaza 'detalles html' con la ruta a tu html de descripciones
-        }
-    </script>
-
-    <script>
-        function mostrarDetallesYorForger() {
-            window.location.href = 'yor-forger.html'; // Reemplaza 'detalles html' con la ruta a tu html de descripciones
-        }
-    </script>
-
-    <script>
-        function mostrarDetallesItsuki() {
-            window.location.href = 'itsuki.html'; // Reemplaza 'detalles html' con la ruta a tu html de descripciones
-        }
-    </script>
-
-    <script>
-        function mostrarDetallesKaede() {
-            window.location.href = 'Kaede-Takagaki.html'; // Reemplaza 'detalles html' con la ruta a tu html de descripciones
-        }
-    </script>
-
-    <script>
-        function mostrarDetallesNameless() {
-            window.location.href = 'nameless-king.html'; // Reemplaza 'detalles html' con la ruta a tu html de descripciones
-        }
-    </script>
-
-    <script>
-        function mostrarDetallesErza() {
-            window.location.href = 'erza-scarlet.html'; // Reemplaza 'detalles html' con la ruta a tu html de descripciones
-        }
-    </script>
-
-    <script>
-        function mostrarDetallesEmilia() {
-            window.location.href = 'emilia-snow.html'; // Reemplaza 'detalles html' con la ruta a tu html de descripciones
-        }
-    </script>
-
-    <script>
-        function mostrarDetallesHaruna() {
-            window.location.href = 'Haruna.html'; // Reemplaza 'detalles html' con la ruta a tu html de descripciones
-        }
-    </script>
-
-    <script>
-        function mostrarDetallesRam() {
-            window.location.href = 'Ram.html'; // Reemplaza 'detalles html' con la ruta a tu html de descripciones
-        }
-    </script>
-
-    <script>
-        function mostrarDetallesRanko() {
-            window.location.href = 'Ranko.html'; // Reemplaza 'detalles html' con la ruta a tu html de descripciones
-        }
-    </script>
-
-    <script>
-        function mostrarDetallesUtahime() {
-            window.location.href = 'Utahime.html'; // Reemplaza 'detalles html' con la ruta a tu html de descripciones
-        }
-    </script>
-
-    <script>
-        function mostrarDetallesKanade() {
-            window.location.href = 'Kanade.html'; // Reemplaza 'detalles html' con la ruta a tu html de descripciones
-        }
-    </script>
 
 </body>
 </html>

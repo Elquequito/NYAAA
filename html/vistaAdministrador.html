@@ -4,7 +4,9 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Panel de Administrador</title>
-    <link rel="stylesheet" href="../css/administrador.css">
+    
+    <link rel="stylesheet" href="../css/administrador.css"> 
+    <link rel="stylesheet" href="../css/icon.css">
 </head>
 <body>
     <header class="header">
@@ -60,7 +62,32 @@
         </form>
     </section>
 
-    <a href="../html/INDEX PRINCIPAL.html" class="volver-btn">Volver al Inicio</a>
+    <section class="section-container">
+        <h2>Productos</h2>
+        <strong><p>Presione cualquier Producto para Editarlo</p></strong>
+        <div class="section-figuras"> 
+            <div class="figure-box" onclick="location.href='../html/editarProducto.html'">
+                <img src="../img/rem-relax.jpg" alt="Figura 1">
+                <p>Rem Relax Time</p>
+                <p>$27.990</p>
+                <p class="stock-message">Disponible</p>
+            </div>
+            <div class="figure-box" onclick="location.href='../html/editarMomoka.html'">
+                <img src="../img/momoka.jpg" alt="Figura 2">
+                <p>Momoka Shijou</p>
+                <p>$119.990</p>
+                <p class="stock-message">Disponible</p>
+            </div>
+            <div class="figure-box" onclick="location.href='../html/editarInozuke.html'">
+                <img src="../img/inozuke.jpg" alt="Figura 3">
+                <p>Inozuke Hashibira</p>
+                <p>$134.990</p>
+                <p class="stock-message">Agotado</p>
+            </div>
+        </div>
+    </section>
+
+    <a href="../html/INDEX-PRINCIPAL.html" class="volver-btn">Volver al Inicio</a>
 
     <script src="../js/administrador.js"></script>
     <script>

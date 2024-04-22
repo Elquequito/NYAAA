@@ -152,20 +152,12 @@ td, th {
 }
 
 /* CSS adicional para el botón Agregar Producto y el campo Precio */
-#precio {
-    padding: 8px 100px;
-}
-
-#nombre {
-    padding: 8px 100px;
-}
-
-#descripcion {
-    padding: 12px 105px;
-}
-
+#precio,
+#nombre,
+#descripcion,
 #detalles {
-    padding: 4px 105px;
+    padding: 8px 100px;
+    width: calc(100% - 1100px);
 }
 
 input[type="submit"] {
@@ -192,20 +184,11 @@ input[type="submit"]:hover {
         padding: 8px; /* Ajuste del padding para pantallas pequeñas */
     }
 
-    #precio {
-        padding: 8px 50px;
-    }
-    
-    #nombre {
-        padding: 8px 50px;
-    }
-    
-    #descripcion {
-        padding: 12px 60px;
-    }
-    
+    #precio,
+    #nombre,
+    #descripcion,
     #detalles {
-        padding: 4px 60px;
+        padding: 8px 50px;
     }
 }
 
@@ -249,3 +232,25 @@ input[type="submit"]:hover {
     font-style: italic; /* Estilo de fuente */
     margin-top: 5px; /* Espacio superior */
 }
+
+.product-image img {
+    max-width: 400px; /* Establece el ancho máximo de la imagen */
+    max-height: 400px; /* Establece la altura máxima de la imagen */
+}
+
+/* Estilo para el botón Eliminar Producto */
+#eliminar-btn {
+    background-color: #FF0000; /* Color rojo */
+    color: #FFFFFF; /* Texto blanco */
+    padding: 10px 20px; /* Espacio interno */
+    border: none; /* Sin borde */
+    border-radius: 5px; /* Bordes redondeados */
+    cursor: pointer; /* Cursor de selección */
+    margin-top: 10px; /* Margen superior */
+}
+
+/* Estilo para el botón Eliminar Producto al pasar el cursor sobre él */
+#eliminar-btn:hover {
+    background-color: #CC0000; /* Color rojo más oscuro */
+}
+
