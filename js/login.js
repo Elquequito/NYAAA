@@ -15,6 +15,8 @@ document.addEventListener("DOMContentLoaded", function() {
     // Agregar un event listener para el clic en el botón de inicio de sesión
     loginButton.addEventListener("click", function() {
         // Redireccionar al INDEX PRINCIPAL.html cuando se hace clic en el botón de inicio de sesión
-        window.location.href = "../html/INDEX PRINCIPAL.html";
+        window.location.href = "../html/index.html";
     });
-});
+});z
+
+

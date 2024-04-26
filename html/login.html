@@ -29,13 +29,18 @@
 
                 <h1>Registro</h1>
                 <span>ingresa tus datos para el registro</span>
+                
                 <input type="text" placeholder="Nombre y Apellido">
 
-                <input type="email" placeholder="Correo">
+                <input type="text"  placeholder="Rut">
 
-                <input type="password" placeholder="Contraseña">
+                <input type="email" id="email" placeholder="Correo">
 
-                <a href="../html/INDEX-PRINCIPAL.html" class="btn">Registro</a>
+                <input type="password" id="pass1" placeholder="Contraseña" required>
+
+                <input type="password" id="pass2" placeholder="Repetir Contraseña" required>
+
+                <button id="validar" class="btn">Registro</button>
 
             </form>
         </div>
@@ -52,7 +57,7 @@
 
                 <input type="password" placeholder="Contraseña">
 
-                <a href="../html/INDEX-PRINCIPAL.html" class="btn">Iniciar Sesion</a>
+                <a href="../html/index.html" class="btn">Iniciar Sesion</a>
                 <a href="../html/login-admin.html" class="btn">Iniciar como Administrador</a>
                 
             </form>
@@ -87,7 +92,7 @@
     </div>
 
     <script src="../js/login.js"></script>
-    <a href="../html/INDEX-PRINCIPAL.html" class="btn-volver">Volver al Inicio</a>
+    <a href="../html/index.html" class="btn-volver">Volver al Inicio</a>
 
 </body>
 
