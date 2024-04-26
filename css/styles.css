@@ -8,38 +8,35 @@ body {
 header {
     background-color: #ff6600;
     color: #fff;
-    padding: 50px;
+    padding: 2% 5%; /* Ajuste para tamaños de pantalla más pequeños */
     display: flex;
-    justify-content: space-between; /* Alinea los elementos al extremo */
-    align-items: center; /* Alinea verticalmente los elementos */
+    justify-content: space-between;
+    align-items: center;
 }
 
 h1 {
-    margin: 0; /* Elimina el margen del título */
-    display: flex; /* Utilizamos flexbox para alinear verticalmente los elementos */
-    align-items: center; /* Alinea verticalmente */
+    margin: 0;
+    display: flex;
+    align-items: center;
     position: relative;
-    font-size: 6em;
-    letter-spacing: 15px;
+    font-size: 2em; /* Tamaño de fuente inicial */
+    letter-spacing: 5px;
     color: #fff;
     text-transform: uppercase;
     width: 100%;
     text-align: center;
-    -webkit-box-reflect: below 1px linear-gradient(transparent, #0098);
-    line-height: 0.7em;
-    outline: none;
-    animation: animate 5s linear infinite;
+    line-height: 1em;
 }
 
 .logo-image {
-    height: 80px; /* Ajusta la altura del logo según sea necesario */
-    /* Agrega cualquier otro estilo necesario para la imagen */
-    margin-right: 1071px; /* Ajusta el margen izquierdo */
+    height: 85px;
+    max-width: 20%; /* Ajuste para tamaños de pantalla más pequeños */
+    margin-right: 60%;
 }
 
 section {
-    padding: 20px;
-    margin: 20px;
+    padding: 2% 5%; /* Ajuste para tamaños de pantalla más pequeños */
+    margin: 2% 0; /* Ajuste para tamaños de pantalla más pequeños */
     background-color: rgb(221, 221, 221);
     border-radius: 10px;
 }
@@ -47,7 +44,7 @@ section {
 h2 {
     color: #ff6600;
     text-align: center;
-    margin-bottom: 10px; /* Espacio inferior para separar del contenido */
+    margin-bottom: 10px;
 }
 
 p {
@@ -65,18 +62,18 @@ img {
 /* Estilos para dispositivos pequeños */
 @media screen and (max-width: 768px) {
     header {
-        padding: 64px; /* Reducimos el padding */
+        padding: 5% 5%; /* Reducimos el padding */
         flex-direction: column; /* Cambiamos la dirección del flexbox a columna */
         align-items: center; /* Alineamos los elementos al centro */
     }
 
     .logo-image {
-        height: 40px; /* Reduce la altura del logo */
-        margin-right: 0px; /* Añade margen superior */
+        height: 75px;
+        max-width: 100%; /* Ajuste para tamaños de pantalla más pequeños */
     }
 
     h1 {
-        font-size: 4em; /* Ajusta el tamaño del título */
+        font-size: 0px; /* Ajusta el tamaño del título */
         margin-top: 10px; /* Añade margen superior */
         text-align: center; /* Centra el título */
         letter-spacing: 5px; /* Ajusta el espaciado entre letras */
@@ -118,15 +115,14 @@ img {
     background-color: #ff6600;
 }
 
-
 .section-figuras {
-    text-align: center; /* Centrar las figuras horizontalmente */
+    text-align: center;
 }
 
 /* Estilos para las cajas de figuras */
 .figure-box {
-    width: 200px; /* Ancho fijo para las figuras */
-    height: 300px; /* Mantenemos la altura */
+    width: 200px;
+    height: auto;
     background-color: #f0f0f0;
     border: 1px solid #ccc;
     margin: 10px;
@@ -134,9 +130,9 @@ img {
     text-align: center;
     cursor: pointer;
     transition: box-shadow 0.3s;
-    display: inline-block; /* Mostrar las figuras en línea */
-    vertical-align: top; /* Alinear las figuras en la parte superior */
-    box-sizing: border-box; /* Incluir el borde y el relleno en el ancho */
+    display: inline-block;
+    vertical-align: top;
+    box-sizing: border-box;
 }
 
 .figure-box img {
@@ -154,16 +150,17 @@ img {
 
 /* Estilos para el mensaje de stock */
 .stock-message {
-    color: #333; /* Color del texto */
-    font-size: 14px; /* Tamaño de la fuente */
-    font-style: italic; /* Estilo de fuente */
-    margin-top: 5px; /* Espacio superior */
+    color: #333;
+    font-size: 14px;
+    font-style: italic;
+    margin-top: 5px;
 }
 
 /* Estilos para la galería de imágenes */
 .gallery-container {
     text-align: center;
 }
+
 /* Estilos para las cajas de figuras en dispositivos pequeños */
 @media screen and (max-width: 768px) {
     .figure-box {

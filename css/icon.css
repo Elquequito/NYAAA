@@ -31,18 +31,6 @@ h1 {
     color: rgb(105, 50, 255);
 }
 
-/* Estilos para dispositivos pequeños */
-@media screen and (max-width: 768px) {
-    h1 {
-        font-size: 24px; /* Tamaño del título para dispositivos pequeños */
-    }
-    
-    .icon {
-        font-size: 30px; /* Tamaño de los iconos para dispositivos pequeños */
-        margin-left: 10px; /* Espacio entre los iconos para dispositivos pequeños */
-    }
-}
-
 /* Estilos para los iconos */
 .icon-container {
     display: flex;
@@ -64,4 +52,28 @@ h1 {
 
 .icon:hover {
     color: rgb(105, 50, 255);
+}
+
+/* Estilos para dispositivos pequeños */
+@media screen and (max-width: 768px) {
+    .title-container {
+        flex-direction: column; /* Cambia la dirección del contenedor a columna en dispositivos pequeños */
+        align-items: center; /* Centra los elementos en la columna */
+    }
+
+    .icon-container {
+        display: flex; /* Muestra los iconos solo en modo responsivo */
+        margin-top: 5px; /* Añade un margen superior */
+        margin-left: auto; /* Mueve los iconos al extremo derecho */
+    }
+
+    .icon {
+        font-size: 30px; /* Tamaño de los iconos para dispositivos pequeños */
+        margin-left: 10px; /* Espacio entre los iconos para dispositivos pequeños */
+    }
+
+    h1 {
+        font-size: 0px; /* Tamaño del título para dispositivos pequeños */
+        text-align: center;
+    }
 }
