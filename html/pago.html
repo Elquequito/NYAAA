@@ -5,7 +5,7 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
   <meta http-equiv="x-ua-compatible" content="ie=edge" />
-  <title>Pago - Nyaaa-Carrito</title>
+  <title>Pago - Nyaaa</title>
   <!-- MDB icon -->
   <link rel="icon" href="img/mdb-favicon.ico" type="image/x-icon" />
   <!-- Font Awesome -->
@@ -15,32 +15,9 @@
   <!-- MDB -->
   <link rel="stylesheet" href="../css/bootstrap-shopping-carts.min.css" />
   <!-- Custom styles -->
-  <style>
-    .gradient-custom {
-      background: #6a11cb;
-      background: -webkit-linear-gradient(to right, #ff6600, #e1ec3c);
-      background: linear-gradient(to right, #ff6600, #e1ec3c);
-      min-height: 100vh; /* Extiende el fondo hasta abajo */
-    }
-
-    .form-group {
-      margin-bottom: 10px; /* Reduce el espacio entre los elementos del formulario */
-    }
-
-    .flag-icon {
-      width: 20px;
-      height: auto;
-      margin-right: 5px;
-    }
-
-    /* Estilo para el número de tarjeta y CVV */
-    input[type="number"]::-webkit-inner-spin-button,
-    input[type="number"]::-webkit-outer-spin-button {
-      -webkit-appearance: none;
-      margin: 0;
-    }
-
-  </style>
+  <link rel="stylesheet" href="../css/pago.css" />
+  <!-- Modal styles -->
+  <link rel="stylesheet" href="../css/modal.css" />
 </head>
 
 <body>
@@ -109,7 +86,7 @@
                 <img src="https://mdbcdn.b-cdn.net/wp-content/plugins/woocommerce-gateway-stripe/assets/images/mastercard.svg"
                   alt="Mastercard" class="me-2 flag-icon" />
               </div>
-              <form>
+              <form id="payment-form">
                 <div class="mb-3 form-group">
                   <label for="tipoPago" class="form-label">Tipo de Pago</label>
                   <select class="form-select" id="tipoPago">
@@ -145,11 +122,20 @@
       </div>
     </div>
   </section>
+  <!-- Ventana modal -->
+  <div id="thank-you-modal" class="modal-container">
+    <div class="modal-content">
+      <img src="../img/graciasCompra.jpg" alt="Fondo" />
+      <h2>Gracias por Comprar en Nyaaa-Store</h2>
+      <a id="redirect-button" href="../html/historialCompra.html" class="btn btn-primary btn-lg">Ver Historial de Compra</a>
+    </div>
+  </div>
+  <!-- Fin de ventana modal -->
   <a href="carrito.html" class="btn btn-primary btn-lg position-fixed top-0 start-0 m-3">Volver al Carrito</a>
   <!-- MDB -->
   <script type="text/javascript" src="js/mdb.min.js"></script>
   <!-- Custom scripts -->
-  <script type="text/javascript"></script>
+  <script type="text/javascript" src="../js/pago.js"></script>
 </body>
 
 </html>
