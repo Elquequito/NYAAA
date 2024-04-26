@@ -62,7 +62,7 @@ img {
 /* Estilos para dispositivos pequeños */
 @media screen and (max-width: 768px) {
     header {
-        padding: 5% 5%; /* Reducimos el padding */
+        padding: 5%; /* Reducimos el padding */
         flex-direction: column; /* Cambiamos la dirección del flexbox a columna */
         align-items: center; /* Alineamos los elementos al centro */
     }
@@ -165,5 +165,21 @@ img {
 @media screen and (max-width: 768px) {
     .figure-box {
         width: calc(50% - 23px); /* Ajustar el ancho para que quepan dos figuras en una fila */
+    }
+}
+
+@media (min-width: 992px) {
+    .offcanvas {
+        display: none;
+    }
+    .container-asies {
+        display: flex;
+        justify-content: center;
+    }
+}
+
+@media (max-width: 991px) {
+    .nav-button {
+        display: none;
     }
 }

@@ -63,7 +63,7 @@ h1 {
 
     .icon-container {
         display: flex; /* Muestra los iconos solo en modo responsivo */
-        margin-top: 5px; /* Añade un margen superior */
+        margin-top: 0px; /* Añade un margen superior */
         margin-left: auto; /* Mueve los iconos al extremo derecho */
     }
 
