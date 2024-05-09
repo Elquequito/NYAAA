@@ -47,7 +47,7 @@
 
     <section class="section-container">
         <h2>Agregar Producto</h2>
-        <form>
+        <form id="agregarProductoForm">
             <label for="nombre">Nombre:</label><br>
             <input type="text" id="nombre" name="nombre" required><br>
             <label for="precio">Precio:</label><br>
@@ -90,24 +90,6 @@
     <a href="../html/index.html" class="volver-btn">Volver al Inicio</a>
 
     <script src="../js/administrador.js"></script>
-    <script>
-        function goBack() {
-            window.history.back();
-        }
-
-        function confirmDelete(usuario) {
-            if (confirm(`¿Seguro que quieres eliminar al usuario ${usuario}?`)) {
-                alert("Usuario eliminado con éxito");
-                // Aquí puedes agregar la lógica para eliminar el usuario si es necesario
-            }
-        }
-
-        function confirmAction(usuario) {
-            if (confirm(`¿Seguro que quieres bloquear al usuario ${usuario}?`)) {
-                alert("Usuario bloqueado con éxito");
-                // Aquí puedes agregar la lógica para eliminar el usuario si es necesario
-            }
-        }
-    </script>
+    <script src="../js/confirmaciones.js"></script>
 </body>
 </html>

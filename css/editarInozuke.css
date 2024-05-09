@@ -26,7 +26,6 @@ h1 {
     text-transform: uppercase;
     width: 100%;
     text-align: center;
-    -webkit-box-reflect: below 1px linear-gradient(transparent, #0098);
     line-height: 0.9em;
     outline: none;
     animation: animate 5s linear infinite;
@@ -47,7 +46,7 @@ h1 {
 .section-container {
     padding: 20px;
     margin: 20px 0;
-    background-color:  #ff6600;
+    background-color:  rgb(194, 194, 194);
     border-radius: 10px;
 }
 

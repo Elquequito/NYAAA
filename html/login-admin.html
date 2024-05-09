@@ -1,38 +1,42 @@
 <!DOCTYPE html>
- <html lang="es">
-   <!-- coding by helpme_coder -->
- <head>
+<html lang="es">
+<!-- coding by helpme_coder -->
+<head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Login admin</title>
     <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
     <link rel="stylesheet" href="../css/login-admin.css">
- </head>
- <body>
+</head>
+<body>
     <div class="wrapper">
-      <div class="login-box">
-         <div class="login-header">
-            <span>Login</span>
-         </div>
-         <div class="input_box">
-            <input type="text" id="user" class="input-field" required>
-            <label for="user" class="label">Nombre de usuario</label>
-            <i class="bx bx-user icon"></i>
-         </div>
-         <div class="input_box">
-            <input type="password" id="pass" class="input-field" required>
-            <label for="pass" class="label">Contraseña</label>
-            <i class="bx bx-lock-alt icon"></i>
-         </div>
-         <div class="remember-forgot">
-            <div class="forgot">
-               <a href="../html/recuperarCuenta.html">Olvidaste tu contraseña?</a>
+        <div class="login-box">
+            <div class="login-header">
+                <span>Login</span>
             </div>
-         </div>
-         <div class="input_box">
-            <a href="../html/vistaAdministrador.html" class="input-submit">Login</a>
-         </div>
-      </div>
+            <div class="input_box">
+                <input type="text" id="user" class="input-field" required>
+                <label for="user" class="label">Nombre de usuario</label>
+                <i class="bx bx-user icon"></i>
+            </div>
+            <div class="input_box">
+                <input type="password" id="pass" class="input-field" required>
+                <label for="pass" class="label">Contraseña</label>
+                <i class="bx bx-lock-alt icon"></i>
+            </div>
+            <div class="remember-forgot">
+                <div class="forgot">
+                    <a href="../html/recuperarCuenta.html">Olvidaste tu contraseña?</a>
+                </div>
+            </div>
+            <div class="input_box">
+                <a href="../html/vistaAdministrador.html" id="loginBtn" class="input-submit">Login</a>
+            </div>
+        </div>
     </div>
- </body>
- </html>
+
+    <!-- Asegúrate de que la ruta al archivo JavaScript sea correcta -->
+    <script src="../js/loginadmin.js"></script>
+
+</body>
+</html>

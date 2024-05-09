@@ -360,7 +360,7 @@ body {
         left: 0;
         width: 100%;
         height: auto; /* Usa altura automática para adaptarse al contenido */
-        background-color: rgba(0, 0, 0, 0.7); /* Fondo semitransparente */
+        background-color: rgba(0, 0, 0); /* Fondo semitransparente */
         display: flex;
         justify-content: center;
         align-items: flex-end; /* Alinea el contenido hacia abajo */

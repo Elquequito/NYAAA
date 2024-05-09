@@ -31,7 +31,6 @@ h1 {
     text-transform: uppercase;
     width: 100%;
     text-align: center;
-    -webkit-box-reflect: below 1px linear-gradient(transparent, #0098);
     line-height: 0.7em;
     outline: none;
     animation: animate 5s linear infinite;
